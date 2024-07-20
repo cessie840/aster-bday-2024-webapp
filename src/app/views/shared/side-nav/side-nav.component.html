@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="content-header mat-app-background dynamic-1">
+        <button mat-icon-button (click)="close.emit()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span style="margin: 0 0.5em;"></span>
+        <app-title-logo />
+    </div>
+
+    <div class="main-content">
+        <a href="/fanart"><button mat-button style="width: 100%;" [disableRipple]="true">Fanart</button></a>
+        <a href="/letters"><button mat-button style="width: 100%;" [disableRipple]="true">Letters</button></a>
+        <a href="/credits"><button mat-button style="width: 100%;" [disableRipple]="true">Credits</button></a>
+    </div>
+</div>

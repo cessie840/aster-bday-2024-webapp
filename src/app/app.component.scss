@@ -1,0 +1,14 @@
+.app-container {
+    height: 100%;
+    width: 100%;
+}
+
+.app-scrollbar-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+    .app-router-container {
+        flex: 1;
+    }
+}
