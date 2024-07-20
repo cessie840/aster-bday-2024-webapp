@@ -2,6 +2,11 @@
 
 Website for [Aster Arcadia](https://www.youtube.com/channel/UCpzxZW5kghGnO5TmAFJQAVw)'s birthday of 2024!
 
+## Local development
+
+1. run `npm install`
+2. run `npm run start`
+
 ## TODO
 
 - landing page
