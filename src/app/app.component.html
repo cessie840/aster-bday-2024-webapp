@@ -5,7 +5,7 @@
     <mat-drawer-content>
 
         <div class="app-scrollbar-container">
-            <app-top-nav (sidenavToggle)="drawer.toggle()" />
+            <app-top-nav (sidenavToggle)="drawer.toggle()" *ngIf="showTopNav" />
             
             <div style="flex-direction: row; display: flex; flex: 1;">
                 <div class="app-router-container">
@@ -13,5 +13,6 @@
                 </div>
             </div>
         </div>
+
     </mat-drawer-content>
 </mat-drawer-container>

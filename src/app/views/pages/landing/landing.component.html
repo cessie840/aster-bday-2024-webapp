@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="password-prompt-container">
+        <div class="password-prompt-wrapper">
+            <p>Example text here</p>
+
+            <mat-form-field class="password-prompt" appearance="outline">
+                <mat-label>Enter the password</mat-label>
+                <input matInput type="text" [(ngModel)]="pwd" autocomplete="one-time-code" (keydown)="onKeyDown($event)">
+            </mat-form-field>
+            <mat-form-field class="password-prompt" appearance="outline">
+                <mat-label>Enter the password that will be hidden</mat-label>
+                <input matInput type="password" [(ngModel)]="pwd" autocomplete="one-time-code">
+            </mat-form-field>
+            <mat-form-field class="password-prompt" appearance="outline">
+                <mat-label>Enter the pass phrase</mat-label>
+                <textarea matInput [(ngModel)]="pwd" style="resize: none; height: 100px;" autocomplete="one-time-code"></textarea>
+            </mat-form-field>
+
+            <div class="password-prompt-info">
+                <p *ngIf="errorMsg" style="color: red;">{{ errorMsg }}</p>
+            </div>
+            <div class="password-prompt-actions">
+                <button mat-raised-button disableRipple="true" (click)="enterPassword()">Enter</button>
+            </div>
+        </div>    
+    </div>
+</div>

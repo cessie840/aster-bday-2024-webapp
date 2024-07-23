@@ -16,6 +16,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { SideNavComponent } from './views/shared/side-nav/side-nav.component';
 import { LettersComponent } from './views/pages/letters/letters.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { LandingComponent } from './views/pages/landing/landing.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     TopNavComponent,
     SideNavComponent,
     LettersComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +42,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatIconModule,
     MatSidenavModule,
     MatDialogModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
