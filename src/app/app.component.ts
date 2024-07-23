@@ -17,9 +17,9 @@ export class AppComponent {
     this.showTopNav = this.router.url !== '/';
 
     this.router.events.pipe(
-      filter((e: Event | RouterEvent): e is RouterEvent => e instanceof NavigationEnd)
+      filter((e: Event | RouterEvent): e is NavigationEnd => e instanceof NavigationEnd)
     ).subscribe(e => {
-      this.showTopNav = e.url !== '/';
+      this.showTopNav = e.urlAfterRedirects !== '/';
     });
   }
 }
