@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-prod": "ng build --configuration production --base-href ./docs && copy docs\\index.html docs\\404.html && move docs\\assets\\CNAME docs\\CNAME",
+    "build-prod": "ng build --configuration production --base-href ./docs && copy dist\\aster-bday-2024-webapp\\index.html dist\\aster-bday-2024-webapp\\404.html && move dist\\aster-bday-2024-webapp\\assets\\CNAME dist\\aster-bday-2024-webapp\\CNAME",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
