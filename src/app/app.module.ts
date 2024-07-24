@@ -16,6 +16,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { SideNavComponent } from './views/shared/side-nav/side-nav.component';
 import { LettersComponent } from './views/pages/letters/letters.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ProjectsComponent } from './views/pages/projects/projects.component';
+import { ProjectStellarVideoPopupComponent } from './views/popups/project-stellar-video-popup/project-stellar-video-popup.component';
+import { SafePipe } from 'safe-pipe';
+import { ProjectstellarComponent } from './views/pages/projectstellar/projectstellar.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     TopNavComponent,
     SideNavComponent,
     LettersComponent,
+    ProjectsComponent,
+    ProjectStellarVideoPopupComponent,
+    ProjectstellarComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +44,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatIconModule,
     MatSidenavModule,
     MatDialogModule,
+    SafePipe,
   ],
   providers: [],
   bootstrap: [AppComponent]

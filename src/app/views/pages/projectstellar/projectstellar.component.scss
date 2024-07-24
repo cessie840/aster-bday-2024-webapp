@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .constellation-map-wrapper {
+        width: 100%;
+        text-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .line {
+            width: 100px;
+            height: 2px;
+            border-top: dashed 2px purple;
+            position: relative;
+        }
+
+        .constellation-map-star {
+            width: 150px;
+            position: relative;
+            z-index: 1;
+        }
+        .constellation-map-star:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .star-1 {
+            top: 200px;
+        }
+        .line-1 {
+            top: 120px;
+            transform: rotate(-30deg);
+        }
+        .star-2 {
+            top: 50px;
+        }
+        .line-2 {
+            top: 65px;
+            transform: rotate(17deg);
+        }
+        .star-3 {
+            top: 100px;
+        }
+        .line-3 {
+            top: 54px;
+            transform: rotate(-20deg);
+        }
+        .star-4 {
+            top: 10px;
+        }
+    }
+}
