@@ -1,0 +1,15 @@
+.container {
+    background-image: url('/assets/unconfirmed_rights/aster-home-page-bg.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+.star {
+    height: 30px;
+    position: absolute;
+}
+
+.star:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}

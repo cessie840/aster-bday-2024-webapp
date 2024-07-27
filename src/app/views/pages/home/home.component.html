@@ -1,2 +1,5 @@
-<button mat-button>button</button>
-
+<div class="container" @fade>
+    <div *ngFor="let starMsg of starMessages">
+        <img [matTooltip]="starMsg.username" matTooltipPosition="above" src="/assets/unconfirmed_rights/star.gif" class="star" (click)="show(starMsg)" [ngStyle]="starMsg.style" />
+    </div>
+</div>

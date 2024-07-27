@@ -16,6 +16,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { SideNavComponent } from './views/shared/side-nav/side-nav.component';
 import { LettersComponent } from './views/pages/letters/letters.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { StarMessagePopupComponent } from './views/popups/star-message-popup/star-message-popup.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     TopNavComponent,
     SideNavComponent,
     LettersComponent,
+    StarMessagePopupComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatIconModule,
     MatSidenavModule,
     MatDialogModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

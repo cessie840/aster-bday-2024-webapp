@@ -1,0 +1,21 @@
+.container {
+    background-image: url('/assets/unconfirmed_rights/star.png');
+    background-size: cover;
+
+    text-align: -webkit-center;
+
+    height: 100%;
+    width: 100%;
+
+    // p {
+    //     width: 400px;
+    // }
+}
+
+::ng-deep .mat-mdc-dialog-container {
+    --mdc-dialog-container-color: transparent;
+    .mdc-dialog__surface {
+        box-shadow: none;
+    }
+}
+
