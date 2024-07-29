@@ -1,2 +1,12 @@
 <div class="container" [ngStyle]="{'background-image': getBgImg()}">
+    <div style="width: 97%; justify-content: space-between; display: flex; margin-top: 2em;">
+        <span></span>
+        <button mat-icon-button mat-dialog-close style="transform: scale(2);" disableRipple="true" matTooltip="Close">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+    <div class="content">
+        <h1>{{ data.username }}</h1>
+        <p>{{ data.text }}</p>
+    </div>
 </div>

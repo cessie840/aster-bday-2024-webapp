@@ -30,9 +30,8 @@ export class HomeComponent {
 
   show(starMsg: StarMessageProps) {
     this.dialog.open(StarMessagePopupComponent, {
-      data: {imgPath: starMsg.imgPath},
-      width: '900px',
-      height: '90%',
+      data: {imgPath: starMsg.imgPath, text: starMsg.text, username: starMsg.username},
+      panelClass: 'star-msg-popup-panel',
       autoFocus: false,
     });
   }

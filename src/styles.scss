@@ -10,3 +10,7 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
     position: fixed;
 }
+
+.star-msg-popup-panel {
+    --mat-dialog-container-max-width: 90vw;
+}

@@ -1,15 +1,14 @@
 .container {
-    background-image: url('/assets/unconfirmed_rights/star.png');
+    // background-image: url('/assets/unconfirmed_rights/star.png');
     background-size: cover;
 
-    text-align: -webkit-center;
-
-    height: 100%;
-    width: 100%;
-
-    // p {
-    //     width: 400px;
-    // }
+    height: 900px;
+    width: 1500px;
+    
+    .content {
+        text-align: -webkit-center;
+        padding: 10em 8em;
+    }
 }
 
 ::ng-deep .mat-mdc-dialog-container {
@@ -18,4 +17,3 @@
         box-shadow: none;
     }
 }
-
