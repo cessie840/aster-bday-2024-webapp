@@ -7,15 +7,7 @@ Website for [Aster Arcadia](https://www.youtube.com/channel/UCpzxZW5kghGnO5TmAFJ
 1. run `npm install`
 2. run `npm run start`
 
-## TODO
+## Deploying
 
-- landing page
-- background in home page
-- animated background (gif / video?)
-- play audio when clicking on Aster in home page
-- star component
-- message popup component (when clicking on star in home page)
-- fanart page
-- fanart component (Card Angular Material [component](https://material.angular.io/components/card/examples)?)
-- letters page(?)
-- credits page
+1. run `npm run build-prod`
+2. copy over files from dist/aster-bday-2024-webapp/ to git pages repo
