@@ -1,2 +1,20 @@
-<button mat-button>button</button>
-
+<div class="bg-image"></div>
+<div class="quick-scroll-bottom-btn">
+    <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+    <span class="spacer"></span>
+    <span>Scroll down</span>
+</div>
+<div class="main-content">
+    <div class="page-thumbnail-wrapper">
+        <div class="page-thumbnail-container">
+            <div *ngFor="let thumbnailDetails of pageThumbnailDetails"
+                class="page-thumbnail"
+                [ngStyle]="{'background-image': 'url(' + thumbnailDetails.thumbnailUrl + ')'}"
+                (click)="navigateToPage(thumbnailDetails.navigateToPath)"
+            >
+                <span class="spacer"></span>
+                <span class="title">{{ thumbnailDetails.title }}</span>
+            </div>
+        </div>
+    </div>
+</div>
