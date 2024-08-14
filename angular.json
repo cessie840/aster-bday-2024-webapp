@@ -30,7 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "aster-bday-2024-webapp:build:production"
+              "buildTarget": "aster-bday-2024-webapp:build:production"
             },
             "development": {
-              "browserTarget": "aster-bday-2024-webapp:build:development"
+              "buildTarget": "aster-bday-2024-webapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "aster-bday-2024-webapp:build"
+            "buildTarget": "aster-bday-2024-webapp:build"
           }
         },
         "test": {
@@ -94,7 +94,7 @@
               "src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
             "scripts": []
