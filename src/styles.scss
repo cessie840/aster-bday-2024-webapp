@@ -18,8 +18,29 @@ html, body {
     width: 100%;
 }
 
+@font-face {
+    font-family: 'DotDigital';
+    src: url('../src/assets/fonts/dot_digital-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Krungthep';
+    src: url('../src/assets/fonts/Krungthep.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mostera';
+    src: url('../src/assets/fonts/Mostera.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0 !important;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: 'Krungthep' !important;
     position: fixed;
 }

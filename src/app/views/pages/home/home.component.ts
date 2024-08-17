@@ -20,22 +20,22 @@ export class HomeComponent {
     this.pageThumbnailDetails = [
       {
         title: 'Projects',
-        thumbnailUrl: '/assets/landing-page/projects-thumbnail.jpg',
+        thumbnailUrl: '/assets/landing-page/thumbnail.svg',
         navigateToPath: 'fanart', // TODO: navigate to projects page
       },
       {
         title: 'Fan letters',
-        thumbnailUrl: '/assets/landing-page/fan-messages-thumbnail.jpg',
+        thumbnailUrl: '/assets/landing-page/thumbnail.svg',
         navigateToPath: 'letters',
       },
       {
         title: 'Fan art',
-        thumbnailUrl: '/assets/landing-page/fan-art-thumbnail.jpg',
+        thumbnailUrl: '/assets/landing-page/thumbnail.svg',
         navigateToPath: 'fanart',
       },
       {
         title: 'Credits',
-        thumbnailUrl: '/assets/landing-page/credits-thumbnail.jpg',
+        thumbnailUrl: '/assets/landing-page/thumbnail.svg',
         navigateToPath: 'credits',
       },
     ];

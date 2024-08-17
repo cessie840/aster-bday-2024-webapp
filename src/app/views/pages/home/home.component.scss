@@ -52,6 +52,7 @@
             justify-content: space-evenly;
             flex-wrap: nowrap;
             width: 80%;
+            min-width: 1300px;
             
             .page-thumbnail {
                 width: 250px;
@@ -71,6 +72,10 @@
                 .title {
                     font-size: xx-large;
                 }
+            }
+
+            .page-thumbnail:hover {
+                transform: scale(1.02);
             }
         }
     }
