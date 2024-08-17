@@ -8,7 +8,11 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class StarMessagePopupComponent {
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: { imgPath: string },
+    @Inject(MAT_DIALOG_DATA) public data: {
+      imgPath: string,
+      message: string,
+      username: string,
+    },
   ) {
 
   }
