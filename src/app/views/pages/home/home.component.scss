@@ -1,5 +1,6 @@
 @use '/src/styles.scss';
 
+
 .bg-image {
     position: absolute;
     width: 100%;
@@ -51,10 +52,12 @@
 
     .page-thumbnail-wrapper {
         width: 100%;
-        height: 50%;
+        height: 80%;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
+
 
         .page-thumbnail-container {
             position: absolute;
@@ -65,22 +68,23 @@
             flex-wrap: nowrap;
             width: 80%;
             min-width: 1300px;
-            
+
             .page-thumbnail {
-                width: 250px;
-                height: 500px;
+                width:15vw;
+                min-width: 200px;
+                aspect-ratio: 1 / 2;
                 display: flex;
                 flex-direction: column;
                 padding: 50px 25px;
-                
+
                 background-size: cover;
-    
+
                 cursor: pointer;
-    
+
                 .spacer {
                     flex-grow: 1;
                 }
-        
+
                 .title {
                     font-size: xx-large;
                 }
@@ -93,3 +97,12 @@
     }
 
 }
+
+	/* fallback */
+	@supports not (aspect-ratio: 1 / 2) {
+    .page-thumbnail {
+		padding-top: 100%;
+		height: 0;
+		position: relative;
+  }
+	}
