@@ -4,6 +4,7 @@
 
 $app-theme: m3-theme.$dark-theme;
 $app-theme-color-primary: mat.get-theme-color($app-theme, primary);
+$app-theme-color-bg: mat.get-theme-color($app-theme, 'background');
 
 html {
     @include mat.all-component-themes($app-theme);

@@ -19,6 +19,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { StarMessagePopupComponent } from './views/popups/star-message-popup/star-message-popup.component';
 import { MatCardModule } from '@angular/material/card';
+import { CookieModule } from 'ngx-cookie';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { MatCardModule } from '@angular/material/card';
     MatDialogModule,
     MatTooltipModule,
     MatCardModule,
+    CookieModule.withOptions(),
   ],
   providers: [],
   bootstrap: [AppComponent]
