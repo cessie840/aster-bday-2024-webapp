@@ -1,7 +1,24 @@
 import { StarMessageProps } from "../models/StarMessage";
 
+const EXAMPLE_MSG_1 = `
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+`;
+const EXAMPLE_MSG_2 = `
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed leo sit amet magna tempus lobortis et vitae justo. Vestibulum commodo dui ut urna sagittis, ac scelerisque enim convallis. Mauris hendrerit lacus porttitor elit pharetra, et posuere est suscipit. Maecenas eget diam eu enim interdum efficitur rutrum eget urna. Cras sit amet hendrerit diam. Donec consequat hendrerit finibus. Quisque velit magna, iaculis nec tempus et, aliquet ultricies eros. Sed in felis eu dolor vulputate viverra. Integer id nunc eu lorem sodales tristique. Donec placerat orci at purus malesuada, at blandit felis laoreet. Morbi consequat, massa vitae vulputate aliquet, leo ex sodales massa, id fermentum velit nibh sed neque. Mauris et turpis eu risus tempus dignissim. Donec lacus orci, rutrum vitae interdum sit amet, commodo sed lectus. Nunc est urna, venenatis ut ex vel, semper vulputate nibh. Nullam et lacinia dui.
+
+Sed at eros facilisis, molestie tortor quis, iaculis odio. In fringilla urna sed sollicitudin volutpat. Mauris augue quam, ultrices non cursus sed, iaculis non metus. Sed scelerisque dictum mauris scelerisque vehicula. Aenean nec erat risus. Aliquam in aliquet libero. Morbi tincidunt iaculis nibh sed condimentum. Sed metus magna, faucibus non mollis ac, imperdiet a purus. Nam venenatis ligula sed dolor imperdiet tempor.
+
+Vivamus semper leo nulla, in dictum odio commodo vitae. Integer hendrerit lacus eget dapibus placerat. Mauris molestie justo tellus, et elementum augue gravida et. Aenean eleifend nisi sed urna tempor sagittis. Nunc at arcu velit. Duis imperdiet diam ac pulvinar sagittis. Ut ac congue ante, et vestibulum sem. Curabitur maximus id nisi non elementum. Nulla est velit, efficitur sed scelerisque porta, tincidunt id sem. Pellentesque ut ligula urna. Sed eleifend nisl a lacus blandit consequat. Praesent condimentum eleifend commodo. Donec at malesuada purus, egestas egestas justo. Curabitur efficitur risus quis purus congue, sit amet cursus justo convallis. Duis lacus lacus, tristique quis aliquet sit amet, rutrum eget lacus. Donec id elementum purus.
+
+Integer nec efficitur orci. Donec ultrices volutpat vehicula. Maecenas a velit nec lorem iaculis dapibus. Pellentesque nunc elit, suscipit in consectetur vitae, maximus sit amet arcu. Pellentesque eu auctor velit. Nulla semper purus at augue euismod, tempus scelerisque est tempor. Integer id nulla aliquam massa aliquam sollicitudin non vitae augue.
+
+Curabitur urna urna, suscipit at ante eu, mattis tempus libero. Donec dignissim porta auctor. Ut arcu ex, consectetur et faucibus nec, feugiat tempor nulla. Integer sed velit fringilla, condimentum augue vitae, condimentum nibh. Duis vitae lectus tincidunt, venenatis nunc in, porttitor sapien. Integer sit amet malesuada nibh. Fusce molestie massa quis leo convallis ornare. Maecenas efficitur a ante at volutpat. Phasellus ultrices quam nibh, ac sagittis augue varius sed.
+`;
+
 export const STAR_MESSAGES: readonly StarMessageProps[] = [
-    {username: 'Clovenski', imgPath: '/assets/unconfirmed_rights/star.png', style: {top: '300px', left: '800px'}},
-    {username: 'hoshee', imgPath: '/assets/unconfirmed_rights/star.png', style: {top: '600px', left: '680px'}},
-    {username: 'cessie', imgPath: '/assets/unconfirmed_rights/star.png', style: {top: '500px', left: '200px'}},
+    {username: 'Clovenski', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '300px', left: '800px', animationDelay:'1300ms'}, fanMessage: EXAMPLE_MSG_2},
+    {username: 'hoshee', imgPath: '/assets/fan-letters-page/star-message-popup/bg-2.png', style: {top: '600px', left: '680px', animationDelay:'1000ms'}, fanMessage: EXAMPLE_MSG_2},
+    {username: 'cessie', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '500px', left: '200px', animationDelay:'10ms'}, fanMessage: EXAMPLE_MSG_2},
 ];

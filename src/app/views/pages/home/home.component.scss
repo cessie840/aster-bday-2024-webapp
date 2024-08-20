@@ -1,3 +1,5 @@
+@use '/src/styles.scss';
+
 .bg-image {
     position: absolute;
     width: 100%;
@@ -5,6 +7,16 @@
     background-image: url('/assets/landing-page/background.jpg');
     background-size: cover;
     z-index: 0;
+}
+
+.bg-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 50%, styles.$app-theme-color-bg 100%);
 }
 
 .quick-scroll-bottom-btn {
@@ -52,6 +64,7 @@
             justify-content: space-evenly;
             flex-wrap: nowrap;
             width: 80%;
+            min-width: 1300px;
             
             .page-thumbnail {
                 width: 250px;
@@ -71,6 +84,10 @@
                 .title {
                     font-size: xx-large;
                 }
+            }
+
+            .page-thumbnail:hover {
+                transform: scale(1.02);
             }
         }
     }
