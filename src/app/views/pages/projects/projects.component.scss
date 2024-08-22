@@ -1,0 +1,48 @@
+@use '@angular/material' as mat;
+@use '/src/styles.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .prompt-bg {
+        z-index: -1;
+    }
+
+    .prompt-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        position: relative;
+        top: -282px;
+
+        .pwd-header {
+            font-size: x-large;
+            align-self: center;
+            margin-bottom: 20px;
+            color: mat.get-theme-color(styles.$app-theme, primary, 40);
+        }
+
+        .pwd-input {
+            resize: none;
+            width: 840px;
+            font-size: xx-large;
+            align-self: center;
+            height: 63px;
+        }
+
+        .pwd-error-msg-container {
+            display: flex;
+            justify-content: center;
+            height: 1em;
+
+            .pwd-error-msg {
+                color: mat.get-theme-color(styles.$app-theme, error, 50);
+            }
+        }
+    }
+}

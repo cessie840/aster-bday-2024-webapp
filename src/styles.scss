@@ -4,6 +4,8 @@
 
 $app-theme: m3-theme.$dark-theme;
 $app-theme-color-primary: mat.get-theme-color($app-theme, primary);
+$app-theme-color-secondary: mat.get-theme-color($app-theme, secondary);
+$app-theme-color-tertiary: mat.get-theme-color($app-theme, tertiary);
 $app-theme-color-bg: mat.get-theme-color($app-theme, 'background');
 
 

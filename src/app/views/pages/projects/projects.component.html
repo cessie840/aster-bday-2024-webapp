@@ -1,0 +1,15 @@
+<div class="container" *ngIf="isPageLocked">
+    <img src="/assets/projects-pwd-page/bg.png" class="prompt-bg"/>
+    <div class="prompt-container">
+        <span class="pwd-header">ENTER PASSWORD</span>
+        <input class="pwd-input" (keydown)="onPwdPromptKeydown($event)" [(ngModel)]="passwordValue" />
+
+        <div class="pwd-error-msg-container">
+            <span class="pwd-error-msg" *ngIf="errorMsg">{{ errorMsg }}</span>
+        </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="!isPageLocked">
+    <p>constellation page</p>
+</div>

@@ -28,7 +28,7 @@ export class HomeComponent {
       {
         title: 'Projects',
         thumbnailUrl: '/assets/landing-page/thumbnail.svg',
-        navigateToPath: 'fanart', // TODO: navigate to projects page
+        navigateToPath: 'projects',
         hasVisited: this.visitedPages.has('projects'),
       },
       {
