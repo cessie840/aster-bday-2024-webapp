@@ -1,21 +1,38 @@
-$star-width: 50px;
-
-.star {
-    width: $star-width;
-    z-index: 1;
-    position: absolute;
+.bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-1;
 }
 
-.star:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
+.stars-section {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 40vw;
+  height: 80vh;
 
-.glow {
-    width: $star-width;
-    z-index: 0;
-    position: absolute;
-    animation: pulse 2s linear infinite;
+  $star-width: 50px;
+  
+  .star {
+      width: $star-width;
+      z-index: 1;
+      position: absolute;
+  }
+  
+  .star:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+  }
+  
+  .glow {
+      width: $star-width;
+      z-index: 0;
+      position: absolute;
+      animation: pulse 2s linear infinite;
+  }
 }
 
 @keyframes pulse {

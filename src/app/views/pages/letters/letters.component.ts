@@ -27,6 +27,7 @@ export class LettersComponent {
       },
       minWidth: '1200px',
       height: '700px',
+      autoFocus: false,
     })
   }
 }
