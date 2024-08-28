@@ -27,25 +27,25 @@ export class HomeComponent {
     this.pageThumbnailDetails = [
       {
         title: 'Projects',
-        thumbnailUrl: '/assets/landing-page/thumbnail.svg',
+        thumbnailUrl: '/assets/landing-page/projects_thumbnail.png',
         navigateToPath: 'projects',
         hasVisited: this.visitedPages.has('projects'),
       },
       {
         title: 'Fan letters',
-        thumbnailUrl: '/assets/landing-page/thumbnail.svg',
+        thumbnailUrl: '/assets/landing-page/fan_letters_thumbnail.png',
         navigateToPath: 'letters',
         hasVisited: this.visitedPages.has('letters'),
       },
       {
         title: 'Fan art',
-        thumbnailUrl: '/assets/landing-page/thumbnail.svg',
+        thumbnailUrl: '/assets/landing-page/fan_art_thumbnail.png',
         navigateToPath: 'fanart',
         hasVisited: this.visitedPages.has('fanart'),
       },
       {
         title: 'Credits',
-        thumbnailUrl: '/assets/landing-page/thumbnail.svg',
+        thumbnailUrl: '/assets/landing-page/credits_thumbnail.png',
         navigateToPath: 'credits',
         hasVisited: this.visitedPages.has('credits'),
       },
