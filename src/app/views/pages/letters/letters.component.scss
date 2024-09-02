@@ -5,9 +5,10 @@
   min-width: 100%;
   min-height: 100%;
   z-index:-1;
+  background-color: rgb(55, 47, 108);
 }
 
-@media (max-width:1300px) { // to maintain smaller bg for small screens
+@media (max-width:1900px) { // to maintain smaller bg for small screens
   .bg-video.dynamic-1 {
     height: 100%;
     min-height: unset;
