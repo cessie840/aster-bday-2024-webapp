@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { STAR_MESSAGES } from 'src/app/data/StarMessages';
 import { StarMessageProps } from 'src/app/models/StarMessage';
@@ -12,10 +12,19 @@ import { StarMessagePopupComponent } from '../../popups/star-message-popup/star-
 export class LettersComponent {
   messages: readonly StarMessageProps[] = STAR_MESSAGES;
 
+  private screenWidth!: number;
+  private screenHeight!: number;
+
   constructor(
     private dialog: MatDialog,
   ) {
+    this.onResize();
+  }
 
+  @HostListener('window:resize', ['$event'])
+  private onResize() {
+    this.screenWidth = window.innerWidth;
+    this.screenHeight = window.innerHeight;
   }
 
   showFanMessagePopup(bgImgPath: string, message: string, username: string) {
@@ -25,9 +34,9 @@ export class LettersComponent {
         message,
         username,
       },
-      minWidth: '1200px',
-      height: '700px',
+      minWidth: this.screenWidth <= 1200 / .75 ? '1100px' : '1200px',
+      height: this.screenHeight <= 700 / .85 ? '85%' : '700px',
       autoFocus: false,
-    })
+    });
   }
 }
