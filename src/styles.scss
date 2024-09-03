@@ -43,6 +43,12 @@ html, body {
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Marcellus SC';
+  src: url('../src/assets/fonts/MarcellusSC-Regular.ttf') format('truetype');
+}
+
+
 body {
     margin: 0 !important;
     font-family: 'Krungthep' !important;

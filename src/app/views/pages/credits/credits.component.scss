@@ -1,0 +1,157 @@
+
+.credits {
+  height:400vh;
+  background: linear-gradient(to bottom, black, #695bcc);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  height:95vh;
+  width:80vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+*
+{
+ /*border: 3px solid red;*/
+  font-family: 'Marcellus SC' !important;
+}
+
+.hero-carousel {
+  padding-block: 1rem;
+}
+
+.carousel {
+  width:60vw;
+  background-color:black;
+  position:relative;
+  box-shadow:
+    0 0 15px 1px #f899ff29,
+    0 0 28px 10px #c870ff40;
+  img {
+    height:100%;
+    object-fit: cover;
+  }
+}
+
+.carousel-item {
+  overflow:hidden;
+  height:70vh;
+}
+.carousel-control-prev, .carousel-control-next {
+  width:7%;
+}
+
+.member-container {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-container img {
+  height:100px;
+  width:100px;
+  border-radius: 50%;
+  background-color: white;
+  display:flex;
+  justify-self: center;
+}
+
+h2 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  line-height: 70px;
+  font-size: 2rem;
+  margin: 0 !important;
+}
+
+.carousel-indicators {
+bottom:-4rem;
+z-index:100;
+button {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-inline:1rem;
+}
+}
+
+.members {
+  display: flex;
+  gap:10%;
+  font-size:1.5rem !important;
+  text-align: center;
+  justify-content: center;
+  width:75vw;
+}
+
+h4 {
+  font-size:0.8rem !important;
+}
+
+h3 {
+  font-size:1.1rem !important;
+  line-height: 10px !important;
+}
+
+.member-container h4 {
+  margin: 6px 0 0 0;
+}
+
+
+
+@supports ( animation-timeline: view() )
+{
+  @keyframes wipe {
+    to {
+      -webkit-mask-position: 100% 0%;
+      mask-position: 100% 0%;
+    }
+  }
+
+  .project {
+    animation-fill-mode: both;
+    animation-timing-function: steps(24);
+  mask-image: url("/assets/credits-page/wipe-mask.png");
+  mask-position: 0% 0%;
+  image-rendering: pixelated;
+  transition-delay: 350ms;
+  transition:300ms;
+  }
+
+
+  .zoocadia {
+    animation: trigger linear forwards;
+    animation-timeline: view();
+    animation-range: entry 10% contain 10%;
+  }
+
+
+
+  @container style(--animate: true) {
+    section:nth-of-type(1)
+    {
+        animation: wipe 2s forwards;
+    }
+  }
+
+  @keyframes trigger {
+    to {
+      --animate: true;
+    }
+  }
+}
