@@ -34,8 +34,8 @@ export class LettersComponent {
         message,
         username,
       },
-      minWidth: this.screenWidth <= 1200 / .75 ? '1100px' : '1200px',
-      height: this.screenHeight <= 700 / .85 ? '85%' : '700px',
+      minWidth: this.screenWidth <= 1200 / .75 ? '1000px' : '1200px',
+      height: this.screenHeight <= 700 / .85 ? '80%' : '700px',
       autoFocus: false,
     });
   }
