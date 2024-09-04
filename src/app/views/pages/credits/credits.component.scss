@@ -25,9 +25,9 @@
 }
 
 //small stars animation
-@mixin small-stars-animation ($screen-width, $color, $density, $speed, $delay){
-    width: 1px;
-    height: 1px;
+@mixin stars-animation ($screen-width, $color, $density, $speed, $delay, $size){
+    width: $size+px;
+    height: $size+px;
     border-radius: 0%;
     box-shadow: #fff 50%;
     opacity: 50%;
@@ -40,36 +40,21 @@
     animation-delay: $delay+s;
 }
 
-//big stars animation
-@mixin big-stars-animation ($screen-width, $color, $density, $speed, $delay){
-    width: 3px;
-    height: 3px;
-    border-radius: 0%;
-    opacity: 20%;
-    box-shadow: random-stars($screen-width, $color, $density);
-    animation-name: stars-twinkling;
-    animation-duration: $speed+s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    animation-delay: $delay+s;
-}
-
 //applying animation & design for the stars
 #stars1{
-    @include small-stars-animation(5000, #ffffff, 600, 2, 0.1);
+    @include stars-animation(5000, #ffffff, 600, 2, 0.1, 1);
 }
 
 #stars2{
-    @include big-stars-animation(5000, #fff, 300, 4, 0.5);
+    @include stars-animation(5000, #fff, 300, 4, 0.5, 5);
 }
 
 #stars3{
-    @include small-stars-animation(8000, #fff, 1000, 3, 0.1);
+    @include stars-animation(8000, #fff, 1000, 3, 0.1, 2);
 }
 
 #stars4{
-    @include big-stars-animation(8000, #fff, 1000, 5, 0.5);
+    @include stars-animation(8000, #fff, 1000, 5, 0.5, 3);
 }
 
 @keyframes stars-twinkling {
