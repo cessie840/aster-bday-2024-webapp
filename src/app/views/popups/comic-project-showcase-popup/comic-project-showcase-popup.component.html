@@ -1,0 +1,25 @@
+<div class="container">
+    <button mat-icon-button class="close-btn" matTooltip="Close" matDialogClose><mat-icon>close</mat-icon></button>
+
+    <span class="title">{{ data.title }}</span>
+    <p>{{ data.description }}</p>
+
+    <div class="comic-wrapper">
+        <button mat-icon-button class="left-btn"
+            [disabled]="disableLeftBtn" (click)="navigateLeft()"
+        >
+            <mat-icon>chevron_left</mat-icon>
+        </button>
+
+        <div *ngFor="let img of imagesToShow; let i = index" class="comic-page-container">
+            <img *ngIf="img != PLACEHOLDER_IMG_VALUE" [src]="img" class="comic-page" />
+            <div *ngIf="img == PLACEHOLDER_IMG_VALUE" class="placeholder-comic-page"></div>
+        </div>
+
+        <button mat-icon-button class="right-btn"
+            [disabled]="disableRightBtn" (click)="navigateRight()"
+        >
+            <mat-icon>chevron_right</mat-icon>
+        </button>
+    </div>
+</div>
