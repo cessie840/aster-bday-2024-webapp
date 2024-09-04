@@ -1,0 +1,79 @@
+
+//background gradient
+.bg {
+    background-image: linear-gradient(to bottom, #000000,#6a5bcd,#9470db);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+//randomly allocate stars
+@function random-stars ($screen-width, $color, $density){
+    $x-shadow: random($screen-width);
+    $y-shadow: random($screen-width);
+
+    $stars: '#{$x-shadow}px #{$y-shadow}px #{$color}';
+    
+    @for $i from 2 through $density{
+        $x-shadow: random($screen-width);
+        $y-shadow: random($screen-width);
+    
+        $stars: '#{$stars}, #{$x-shadow}px #{$y-shadow}px #{$color}';
+    }
+    @return unquote($stars);
+}
+
+//small stars animation
+@mixin small-stars-animation ($screen-width, $color, $density, $speed, $delay){
+    width: 1px;
+    height: 1px;
+    border-radius: 0%;
+    box-shadow: #fff 50%;
+    opacity: 50%;
+    box-shadow:  random-stars($screen-width, $color, $density);
+    animation-name: stars-twinkling;
+    animation-duration: $speed+s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-delay: $delay+s;
+}
+
+//big stars animation
+@mixin big-stars-animation ($screen-width, $color, $density, $speed, $delay){
+    width: 3px;
+    height: 3px;
+    border-radius: 0%;
+    opacity: 20%;
+    box-shadow: random-stars($screen-width, $color, $density);
+    animation-name: stars-twinkling;
+    animation-duration: $speed+s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-delay: $delay+s;
+}
+
+//applying animation & design for the stars
+#stars1{
+    @include small-stars-animation(5000, #ffffff, 600, 2, 0.1);
+}
+
+#stars2{
+    @include big-stars-animation(5000, #fff, 300, 4, 0.5);
+}
+
+#stars3{
+    @include small-stars-animation(8000, #fff, 1000, 3, 0.1);
+}
+
+#stars4{
+    @include big-stars-animation(8000, #fff, 1000, 5, 0.5);
+}
+
+@keyframes stars-twinkling {
+    0%   {opacity: 0;}
+    50%  {opacity: 1;}
+    100% {opacity: 0;}
+}
