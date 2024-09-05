@@ -18,7 +18,7 @@ Curabitur urna urna, suscipit at ante eu, mattis tempus libero. Donec dignissim 
 `;
 
 export const STAR_MESSAGES: readonly StarMessageProps[] = [
-    {username: 'Clovenski', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '300px', left: '800px', animationDelay:'1300ms'}, fanMessage: EXAMPLE_MSG_2},
-    {username: 'hoshee', imgPath: '/assets/fan-letters-page/star-message-popup/bg-2.png', style: {top: '600px', left: '680px', animationDelay:'1000ms'}, fanMessage: EXAMPLE_MSG_2},
-    {username: 'cessie', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '500px', left: '200px', animationDelay:'10ms'}, fanMessage: EXAMPLE_MSG_2},
+    {username: 'Clovenski', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '10vh', left: '30vw', animationDelay:'1300ms'}, fanMessage: EXAMPLE_MSG_2},
+    {username: 'hoshee', imgPath: '/assets/fan-letters-page/star-message-popup/bg-2.png', style: {top: '40vh', left: '40vw', animationDelay:'1000ms'}, fanMessage: EXAMPLE_MSG_2},
+    {username: 'cessie', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '30vh', left: '5vw', animationDelay:'10ms'}, fanMessage: EXAMPLE_MSG_2},
 ];

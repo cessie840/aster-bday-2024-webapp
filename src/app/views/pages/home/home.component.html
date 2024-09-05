@@ -9,7 +9,7 @@
         <div class="page-thumbnail-container">
             <div *ngFor="let thumbnailDetails of pageThumbnailDetails"
                 class="page-thumbnail"
-                [ngStyle]="{'background-image': 'url(' + thumbnailDetails.thumbnailUrl + ')', 'filter': thumbnailDetails.hasVisited ? 'grayscale(1)' : ''}"
+                [ngStyle]="{'background-image': 'url(' + thumbnailDetails.thumbnailUrl + ')'}"
                 (click)="navigateToPage(thumbnailDetails.navigateToPath)"
             >
                 <span class="spacer"></span>
