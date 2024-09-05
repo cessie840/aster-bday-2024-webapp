@@ -20,6 +20,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { StarMessagePopupComponent } from './views/popups/star-message-popup/star-message-popup.component';
 import { MatCardModule } from '@angular/material/card';
 import { CookieModule } from 'ngx-cookie';
+import { ComicProjectShowcasePopupComponent } from './views/popups/comic-project-showcase-popup/comic-project-showcase-popup.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { CookieModule } from 'ngx-cookie';
     SideNavComponent,
     LettersComponent,
     StarMessagePopupComponent,
+    ComicProjectShowcasePopupComponent,
   ],
   imports: [
     BrowserModule,

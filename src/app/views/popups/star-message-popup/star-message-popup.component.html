@@ -1,7 +1,7 @@
 <div class="container" [ngStyle]="{'background-image': getBgImg()}">
     <div class="message-wrapper">
         <button mat-icon-button class="close-btn" matTooltip="Close" matDialogClose><mat-icon>close</mat-icon></button>
-        <h2 class="username">{{ data.username }}</h2>
+        <span class="username">{{ data.username }}</span>
         <div class="message dynamic-1">
             <p>{{ data.message }}</p>
         </div>
