@@ -1,7 +1,8 @@
-import { Component, Inject, numberAttribute } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ComicPageData } from 'src/app/data/ComicImages';
 
-const MAX_IMAGES_SHOWN = 2;
+const MAX_IMAGES_SHOWN = 1;
 
 @Component({
   selector: 'app-comic-project-showcase-popup',
@@ -17,31 +18,46 @@ export class ComicProjectShowcasePopupComponent {
 
   idx = 0;
 
-  imagesToShow: string[] = [];
+  imagesToShow: ComicPageData[] = [];
+
+  isSmallScreen = false;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: {
       title: string,
       description: string,
-      imgs: readonly string[],
+      imgs: readonly ComicPageData[],
+      isSmallScreen: boolean,
     },
   ) {
     if (data.imgs.length > MAX_IMAGES_SHOWN) {
       this.disableRightBtn = false;
     }
     this.computeImagesToShow();
+
+    if (data.isSmallScreen) {
+      this.isSmallScreen = true;
+    }
   }
 
   private computeImagesToShow() {
-    const newImagesToShow = [];
+    const newImagesToShow: ComicPageData[] = [];
     for (let i = this.idx; i < this.idx + MAX_IMAGES_SHOWN; i++) {
       if (i < this.data.imgs.length) {
         newImagesToShow.push(this.data.imgs[i]);
       } else {
-        newImagesToShow.push(this.PLACEHOLDER_IMG_VALUE);
+        newImagesToShow.push({ srcPath: this.PLACEHOLDER_IMG_VALUE });
       }
     }
     this.imagesToShow = newImagesToShow;
+  }
+
+  getDisplayOf(pageData: ComicPageData): string {
+    if (pageData.chapter == undefined && pageData.page == undefined) {
+      return '(0)'; // must be cover of the comic
+    }
+
+    return `(${pageData.chapter}-${pageData.page})`;
   }
 
   navigateLeft() {

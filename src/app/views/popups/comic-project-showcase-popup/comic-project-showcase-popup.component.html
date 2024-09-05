@@ -8,18 +8,20 @@
         <button mat-icon-button class="left-btn"
             [disabled]="disableLeftBtn" (click)="navigateLeft()"
         >
-            <mat-icon>chevron_left</mat-icon>
+            <mat-icon *ngIf="!disableLeftBtn">chevron_left</mat-icon>
         </button>
 
-        <div *ngFor="let img of imagesToShow; let i = index" class="comic-page-container">
-            <img *ngIf="img != PLACEHOLDER_IMG_VALUE" [src]="img" class="comic-page" />
-            <div *ngIf="img == PLACEHOLDER_IMG_VALUE" class="placeholder-comic-page"></div>
+        <div *ngFor="let page of imagesToShow; let i = index" class="comic-page-container">
+            <img *ngIf="page.srcPath != PLACEHOLDER_IMG_VALUE" [src]="page.srcPath" [ngClass]="['comic-page', isSmallScreen ? 'sm-screen' : '' ]" />
+            <div *ngIf="page.srcPath == PLACEHOLDER_IMG_VALUE" [ngClass]="['placeholder-comic-page', isSmallScreen ? 'sm-screen' : '']"></div>
+
+            <p>{{ getDisplayOf(page) }}</p>
         </div>
 
         <button mat-icon-button class="right-btn"
             [disabled]="disableRightBtn" (click)="navigateRight()"
         >
-            <mat-icon>chevron_right</mat-icon>
+            <mat-icon *ngIf="!disableRightBtn">chevron_right</mat-icon>
         </button>
     </div>
 </div>

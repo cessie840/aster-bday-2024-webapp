@@ -35,10 +35,19 @@
             margin: 0 1em;
             flex-grow: 1;
             text-align: center;
-            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            
+            .comic-page.sm-screen, .placeholder-comic-page.sm-screen {
+                max-width: 300px;
+            }
 
             .comic-page, .placeholder-comic-page {
-                width: 100%;
+                width: 95%;
+                max-width: 550px;
 
                 -moz-user-select: none;
                 -webkit-user-select: none;
