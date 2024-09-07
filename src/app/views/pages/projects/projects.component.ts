@@ -46,7 +46,7 @@ export class ProjectsComponent {
       return;
     }
 
-    if (this.passwordValue != 'test') {
+    if (this.passwordValue != 'Stars Fadded to Dust') {
       this.errorMsg = 'INCORRECT PASSWORD';
       return;
     }
@@ -64,6 +64,7 @@ export class ProjectsComponent {
         description: '(Description and Project tweet link)',
         imgs: JESS_COMIC_PROJECT_IMAGES,
         isSmallScreen: this.screenHeight <= 700 / .85,
+        backgroundColor: 'rgb(104, 92, 204)',
       },
       minWidth: this.screenWidth <= 1200 / .75 ? '1000px' : '1200px',
       height: '80%', // try to take as much space to make comic pages big enough to read on screen

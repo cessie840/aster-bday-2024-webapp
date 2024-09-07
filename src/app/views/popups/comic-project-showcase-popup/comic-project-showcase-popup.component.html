@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" [ngStyle]="{'background-color': data.backgroundColor ? data.backgroundColor : 'rgb(92, 61, 111)'}">
     <button mat-icon-button class="close-btn" matTooltip="Close" matDialogClose><mat-icon>close</mat-icon></button>
 
     <span class="title">{{ data.title }}</span>

@@ -66,3 +66,7 @@ body {
     background: #9470db;
     border-radius: 10px;
 }
+
+.mat-mdc-dialog-surface {
+    border-radius: unset !important; // for no rounded edges in popups
+ }
