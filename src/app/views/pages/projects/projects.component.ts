@@ -46,7 +46,7 @@ export class ProjectsComponent {
       return;
     }
 
-    if (this.passwordValue != 'Stars Fadded to Dust') {
+    if (this.passwordValue != 'Stars Faded to Dust') {
       this.errorMsg = 'INCORRECT PASSWORD';
       return;
     }
