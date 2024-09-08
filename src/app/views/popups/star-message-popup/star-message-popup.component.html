@@ -3,8 +3,9 @@
         <button mat-icon-button class="close-btn" matTooltip="Close" matDialogClose>
             <img class="close-btn-icon" src="/assets/shared/close_btn_black.png" />
         </button>
-        <span class="username">{{ data.username }}</span>
-        <div class="message dynamic-1">
+        <!-- if message is empty, means it is a custom message template that already has message in it -->
+        <span *ngIf="data.message" class="username">{{ data.username }}</span>
+        <div *ngIf="data.message" class="message dynamic-1">
             <p>{{ data.message }}</p>
         </div>
     </div>

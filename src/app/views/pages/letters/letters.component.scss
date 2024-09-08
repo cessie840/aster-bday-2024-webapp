@@ -27,10 +27,11 @@
     width: $star-width;
     z-index: 1;
     position: absolute;
+    transform: scale(2);
   }
   
   .star:hover {
-    transform: scale(1.1);
+    transform: scale(2.5);
     cursor: pointer;
   }
   

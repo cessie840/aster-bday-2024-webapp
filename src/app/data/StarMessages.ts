@@ -1,24 +1,58 @@
 import { StarMessageProps } from "../models/StarMessage";
 
-const EXAMPLE_MSG_1 = `
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-`;
-const EXAMPLE_MSG_2 = `
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed leo sit amet magna tempus lobortis et vitae justo. Vestibulum commodo dui ut urna sagittis, ac scelerisque enim convallis. Mauris hendrerit lacus porttitor elit pharetra, et posuere est suscipit. Maecenas eget diam eu enim interdum efficitur rutrum eget urna. Cras sit amet hendrerit diam. Donec consequat hendrerit finibus. Quisque velit magna, iaculis nec tempus et, aliquet ultricies eros. Sed in felis eu dolor vulputate viverra. Integer id nunc eu lorem sodales tristique. Donec placerat orci at purus malesuada, at blandit felis laoreet. Morbi consequat, massa vitae vulputate aliquet, leo ex sodales massa, id fermentum velit nibh sed neque. Mauris et turpis eu risus tempus dignissim. Donec lacus orci, rutrum vitae interdum sit amet, commodo sed lectus. Nunc est urna, venenatis ut ex vel, semper vulputate nibh. Nullam et lacinia dui.
-
-Sed at eros facilisis, molestie tortor quis, iaculis odio. In fringilla urna sed sollicitudin volutpat. Mauris augue quam, ultrices non cursus sed, iaculis non metus. Sed scelerisque dictum mauris scelerisque vehicula. Aenean nec erat risus. Aliquam in aliquet libero. Morbi tincidunt iaculis nibh sed condimentum. Sed metus magna, faucibus non mollis ac, imperdiet a purus. Nam venenatis ligula sed dolor imperdiet tempor.
-
-Vivamus semper leo nulla, in dictum odio commodo vitae. Integer hendrerit lacus eget dapibus placerat. Mauris molestie justo tellus, et elementum augue gravida et. Aenean eleifend nisi sed urna tempor sagittis. Nunc at arcu velit. Duis imperdiet diam ac pulvinar sagittis. Ut ac congue ante, et vestibulum sem. Curabitur maximus id nisi non elementum. Nulla est velit, efficitur sed scelerisque porta, tincidunt id sem. Pellentesque ut ligula urna. Sed eleifend nisl a lacus blandit consequat. Praesent condimentum eleifend commodo. Donec at malesuada purus, egestas egestas justo. Curabitur efficitur risus quis purus congue, sit amet cursus justo convallis. Duis lacus lacus, tristique quis aliquet sit amet, rutrum eget lacus. Donec id elementum purus.
-
-Integer nec efficitur orci. Donec ultrices volutpat vehicula. Maecenas a velit nec lorem iaculis dapibus. Pellentesque nunc elit, suscipit in consectetur vitae, maximus sit amet arcu. Pellentesque eu auctor velit. Nulla semper purus at augue euismod, tempus scelerisque est tempor. Integer id nulla aliquam massa aliquam sollicitudin non vitae augue.
-
-Curabitur urna urna, suscipit at ante eu, mattis tempus libero. Donec dignissim porta auctor. Ut arcu ex, consectetur et faucibus nec, feugiat tempor nulla. Integer sed velit fringilla, condimentum augue vitae, condimentum nibh. Duis vitae lectus tincidunt, venenatis nunc in, porttitor sapien. Integer sit amet malesuada nibh. Fusce molestie massa quis leo convallis ornare. Maecenas efficitur a ante at volutpat. Phasellus ultrices quam nibh, ac sagittis augue varius sed.
-`;
+// empty string for fan msg means custom img that contains message itself
 
 export const STAR_MESSAGES: readonly StarMessageProps[] = [
-    {username: 'Clovenski', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '10vh', left: '30vw', animationDelay:'1300ms'}, fanMessage: EXAMPLE_MSG_2},
-    {username: 'hoshee', imgPath: '/assets/fan-letters-page/star-message-popup/bg-2.png', style: {top: '40vh', left: '40vw', animationDelay:'1000ms'}, fanMessage: EXAMPLE_MSG_2},
-    {username: 'cessie', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '30vh', left: '5vw', animationDelay:'10ms'}, fanMessage: EXAMPLE_MSG_2},
+    {username: 'Clovenski', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '13vh', left: '19vw', animationDelay:'1300ms'}, fanMessage: "Happy birthday Aster!! Hope you're having a great birthday today~. The Arcadians have done some insane projects and they are all so amazingly talented. You are so loved; hope this birthday reminds you of that :D"},
+    {username: 'Shiropy', imgPath: '/assets/fan-letters-page/star-message-popup/bg-2.png', style: {top: '40vh', left: '39vw', animationDelay:'1000ms'}, fanMessage: "Happy birthday to our star boy Aster!! When you first debuted I thought you were the cutest thing ever and I still do!! you shine on all of Iluna and Niji and we're so happy that you're here! Happy Birthday Aster, I hope you have a great one!! "},
+    {username: '50rix!', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '37vh', left: '48vw', animationDelay:'100ms'}, fanMessage: "Happy birthday aster!! Have such a wonderful borger and league the day away^^ you're doing amazing!"},
+    {username: 'Goomb', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '30vh', left: '19vw', animationDelay:'20ms'}, fanMessage: "Hai Asta! Happy Birthday! I just wanted to say you're so important to me as a person. You've motivated me to become a better person, and helped me learn to accept myself for who I am and who I want to be. I was always nervous about my hobbies and who I was, especially considering I'm a femboy, but you always made me feel comfy about myself, and following my passions and dreams. Thank you so much! <3 - Goomb"},
+    {username: 'Mar_bam4', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_mar_bam4.png', style: {top: '34vh', left: '40vw', animationDelay:'30ms'}, fanMessage: ""},
+    {username: 'Akiraxoi', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '5vh' , left: '50vw', animationDelay:'40ms'}, fanMessage: `Happy birthday aster the best and most coolest and old- I mean young and spunky oshi, i always appreciate you and I’m thankful to have an awesome kamioshi like you <3 stay awesome and cool and I hope you have the best birthday ever 💜 
+
+- Akira.`},
+    {username: 'kharii', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_sirikarn.jpeg', style: {top: '32vh', left: '5vw' , animationDelay:'50ms'}, fanMessage: ""},
+    {username: '@yoruutt', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_yoruutt.jpeg', style: {top: '50vh', left: '12vw', animationDelay:'60ms'}, fanMessage: ""},
+    {username: '格格藍@G_g_blu', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_g_g_blu.png', style: {top: '15vh', left: '33vw', animationDelay:'70ms'}, fanMessage: ""},
+    {username: 'Ahoge', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '19vh', left: '25vw', animationDelay:'80ms'}, fanMessage: `Aster*sniffle* happy birthday I love you, you old star ur so sigma keep being you, you're my favorite Oshi keep doing what you do to make others happy😊 I love you ❤️ skibidi rizz
+Also can I follow you where you’re going right now, because my parents always told me to follow my 𝔻𝕣𝕖𝕒𝕞𝕤 😔`},
+    {username: 'niko_cwips', imgPath: '/assets/fan-letters-page/star-message-popup/bg-2.png', style: {top: '4vh' , left: '22vw', animationDelay:'90ms'}, fanMessage: "Happy Birthday Asta! Hope you have lots of fun on your special day. Thank you for your hardwork always. We, arcadians appreciate you. We're happy that you are now focusing on doing the things you want to do for your community and for yourself. Keep going and we'll always be in this journey with you! Just trust yourself starboy. You got this. Ganba!"},
+    {username: '@WiWuismyname', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '33vh', left: '28vw', animationDelay:'100ms'}, fanMessage: `HAPPY BIRTHDAY, ASTIE!!!
+
+Thank you for being here and I hope you enjoy your birthday! Keep on grinding not just in games but also in life. We, Arcadians are always here for you to shower you love and support whenever you need it.
+
+We love you, Astie! Happy Birthday! 🎉🎉💜💜`},
+    {username: 'CloudieDaiz', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '38vh', left: '24vw', animationDelay:'120ms'}, fanMessage: "Thank you for being the brightest star in the universe. Everyday I am grateful I discovered you and was able to join this amazing fandom."},
+    {username: 'Joanne', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '34vh', left: '33vw', animationDelay:'130ms'}, fanMessage: "Happy Birthday Aster~ Hope you have an amazing day surrounded by happiness and loved ones! You're the best and we Arcadians are so proud to have you as our oshi!"},
+    {username: 'jeeonky/jeeonky2', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_jeeonky.jpg', style: {top: '42vh', left: '7vw' , animationDelay:'140ms'}, fanMessage: ""},
+    {username: 'Bruh 💜', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_bratt.png', style: {top: '28vh', left: '33vw', animationDelay:'150ms'}, fanMessage: ""},
+    {username: 'Kodzuken', imgPath: '/assets/fan-letters-page/star-message-popup/bg-2.png', style: {top: '12vh', left: '44vw', animationDelay:'160ms'}, fanMessage: "Hi Aster! Happy early birthday to you(or whenever you see this imao) but anyways good job on your progress as a niji en vtuber :D. A distinctive feature about your vtuber journey is the speed you play tetris like 26 seconds?!😭 Like what do you feed yourself?! But anyways thanks for everything and welp good luck reading all the messages the arcadians have for you :)"},
+    {username: 'Annonymous', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_annon.png', style: {top: '5vh' , left: '50vw', animationDelay:'170ms'}, fanMessage: ""},
+    {username: '🎀 𝐿𝑒𝓃𝓀𝒶 🎀 (aka Mahou-hime)', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '37vh', left: '15vw', animationDelay:'180ms'}, fanMessage: `Dear Aster, 
+Happy birthday! 
+I want to thank you again for all the fun and happy memories you’ve given me and the Arcadians ♡ 
+I’ve been an Arcadian since the start and I’ve really enjoyed every moment of it (*\´꒳\`*) 
+I seriously have so many funny and happy moments I cherish spending with you and my fellow Arcadians that are irreplaceable, thank you so much! !
+I hope you continue to do what you love without feeling burnt out or lonely, the Arcadians will always be here for you Asta!!! (☝︎ ՞ਊ ՞)☝︎
+Sending lots of love your way… ♡(´ε｀ )
+
+Yours truly, 
+🎀Lenka🎀 (aka Mahou-hime lol)`},
+    {username: 'MysteriousLilac (Caeli)', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_mysteries_caeli.png', style: {top: '22vh', left: '22vw', animationDelay:'190ms'}, fanMessage: ""},
+    {username: 'Sirius!! ', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_sirius.png', style: {top: '18vh' , left: '39vw', animationDelay:'200ms'}, fanMessage: ""},
+    {username: '@lookkaew777', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_lookkaew.png', style: {top: '28vh' , left: '15vw', animationDelay:'200ms'}, fanMessage: ""},
+    {username: 'Kenken', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_kenken.png', style: {top: '19vh' , left: '9vw', animationDelay:'200ms'}, fanMessage: ""}, 
+    {username: 'Nao Fumiko', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '8vh' , left: '15vw', animationDelay:'200ms'}, fanMessage: `Happy birthday, Aster! (It's your third birthday already, omg!)
+Thank you for being here with us and bringing us so much joy and fun memories! We appreciate all the hard work you've done and we'll always be by your side and support you. I hope you achieve all your goals in this journey and I wish you good luck in the future!
+
+I hope you enjoy your special day today and all the surprises we have for you >w<`},
+    {username: '@WeissSaturnia', imgPath: '/assets/fan-letters-page/star-message-popup/bg-2.png', style: {top: '14vh' , left: '28vw', animationDelay:'200ms'}, fanMessage: `Happy Birthday Aster!!
+From the moment I met you, you were always a source of inspiration and motivation to me.
+Whenever I’m at a low point, I always think about my oshi that pushes through despite everything that tries to bring him down. I’ll keep working hard, so you better not give up either! When you read this remember you are very loved and looked up to. We support you and celebrate you as the cool hardworking inspiring silly little guy you are. Arcadians got your back always <3 (sending birthday huggies!! <3)`},
+
+    {username: 'Rui', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '6vh' , left: '9vw', animationDelay:'200ms'}, fanMessage: `To our dearest star,
+
+Happy Birthday! It's been a while ride for both of us, so I hope you enjoy your day to the fullest. Thank you for coming into my and our lives, Aster. You are the best wish that a shooting star could ever grant. `},
+    {username: 'is_meep', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_is_meep.png', style: {top: '5vh' , left: '29vw', animationDelay:'200ms'}, fanMessage: ""},
+    {username: 'milan', imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png', style: {top: '50vh' , left: '20vw', animationDelay:'200ms'}, fanMessage: "happy birthday my favorite star boy and god gamer, aster arcadia of nijisanji en’s 6th wave iluna <3 i know it’ll be too taxing for you to read too much so i’ll keep mine very short! thank you for always being you. no matter the ups and downs, no matter how you think you’re doing enough and no matter how persistent you think you can get, i want you to know you’ve truly been an amazing beacon of light and strength to me and to a lot of arcadians. you creatively inspire me in so many ways you wouldn’t imagine an anime boy would be able to do, and i will never get tired of saying how proud i am of you and this beautiful community. thank you, always. all my love and acknowledgement to the galaxy and back! :D"},
 ];

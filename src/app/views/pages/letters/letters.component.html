@@ -3,8 +3,12 @@
 </video>
 
 <div class="stars-section">
-    <img *ngFor="let msg of messages" src="/assets/fan-letters-page/star.png" class="star" [ngStyle]="msg.style"
+    <!-- <img *ngFor="let msg of messages" src="/assets/fan-letters-page/star.png" class="star" [ngStyle]="msg.style"
+        matTooltip="{{ msg.username }}" (click)="showFanMessagePopup(msg.imgPath, msg.fanMessage, msg.username)"
+    /> -->
+    <!-- <img *ngFor="let msg of messages" src="/assets/fan-letters-page/glow.png" class="glow" [ngStyle]="msg.style" /> -->
+
+    <img *ngFor="let msg of messages" [src]="isClicked(msg) ? '/assets/fan-letters-page/glowing_star_purple.gif' : '/assets/fan-letters-page/glowing_star_yellow.gif'" class="star" [ngStyle]="msg.style"
         matTooltip="{{ msg.username }}" (click)="showFanMessagePopup(msg.imgPath, msg.fanMessage, msg.username)"
     />
-    <img *ngFor="let msg of messages" src="/assets/fan-letters-page/glow.png" class="glow" [ngStyle]="msg.style" />
 </div>
