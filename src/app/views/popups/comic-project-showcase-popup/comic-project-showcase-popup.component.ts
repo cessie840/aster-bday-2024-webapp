@@ -28,6 +28,7 @@ export class ComicProjectShowcasePopupComponent {
       description: string,
       imgs: readonly ComicPageData[],
       isSmallScreen: boolean,
+      backgroundColor: string,
     },
   ) {
     if (data.imgs.length > MAX_IMAGES_SHOWN) {
