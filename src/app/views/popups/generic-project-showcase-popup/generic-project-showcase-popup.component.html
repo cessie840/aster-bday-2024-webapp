@@ -1,5 +1,7 @@
 <div class="container" [ngStyle]="{'background-color': data.backgroundColor ? data.backgroundColor : 'rgb(92, 61, 111)'}">
-    <button mat-icon-button class="close-btn" matTooltip="Close" matDialogClose><mat-icon>close</mat-icon></button>
+    <button mat-icon-button class="close-btn" matTooltip="Close" matDialogClose>
+        <img class="close-btn-icon" [src]="data.useWhiteCloseBtn ? '/assets/shared/close_btn_white.png' : '/assets/shared/close_btn_black.png'" />
+    </button>
 
     <span class="title">{{ data.title }}</span>
 

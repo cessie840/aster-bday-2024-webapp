@@ -18,6 +18,7 @@ export class GenericProjectShowcasePopupComponent {
       externalLink?: string,
       backgroundColor?: string,
       isSmScreen: boolean,
+      useWhiteCloseBtn?: boolean,
     },
     private domSanitizer: DomSanitizer,
   ) {

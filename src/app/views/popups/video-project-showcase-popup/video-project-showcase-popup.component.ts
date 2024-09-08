@@ -16,6 +16,7 @@ export class VideoProjectShowcasePopupComponent {
       description: string,
       videoLink: string,
       backgroundColor?: string,
+      useWhiteCloseBtn?: boolean,
     },
     private domSanitizer: DomSanitizer,
   ) {
