@@ -11,5 +11,13 @@
 </div>
 
 <div class="container" *ngIf="!isPageLocked">
-    <button mat-button (click)="openProject()">Jess project</button>
+    <!-- TODO: move these to clickable stars that lay on top of constellation background -->
+    <button mat-button (click)="openProject('Jess')">Jess project</button>
+    <button mat-button (click)="openProject('Niko')">Niko project</button>
+    <button mat-button (click)="openProject('Syndrie')">Syndrie project</button>
+    <button mat-button (click)="openProject('Akira')">Akira project</button>
+    <button mat-button (click)="openProject('Milan')">Milan project</button>
+    <button mat-button (click)="openProject('Hoshee')">Hoshee project</button>
+    <button mat-button (click)="openProject('Rui')">Rui project</button>
+    <button mat-button (click)="openProject('Ascana')">Ascana project</button>
 </div>
