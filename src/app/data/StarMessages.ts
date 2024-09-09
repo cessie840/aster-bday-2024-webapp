@@ -28,7 +28,7 @@ We love you, Astie! Happy Birthday! 🎉🎉💜💜`},
     {username: 'Bruh 💜'                       , imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_bratt.png'  , style: {top: '22vh', left: '32vw', animationDelay:'150ms'}, fanMessage: ""},
     {username: 'Kodzuken'                      , imgPath: '/assets/fan-letters-page/star-message-popup/bg-2.png'              , style: {top: '12vh', left: '75vw', animationDelay:'160ms'}, fanMessage: "Hi Aster! Happy early birthday to you(or whenever you see this imao) but anyways good job on your progress as a niji en vtuber :D. A distinctive feature about your vtuber journey is the speed you play tetris like 26 seconds?!😭 Like what do you feed yourself?! But anyways thanks for everything and welp good luck reading all the messages the arcadians have for you :)"},
     {username: 'Annonymous'                    , imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_annon.png'  , style: {top: '45vh', left: '59vw', animationDelay:'170ms'}, fanMessage: ""},
-    {username: '🎀 𝐿𝑒𝓃𝓀𝒶 🎀 (aka Mahou-hime)', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png'              , style: {top: '37vh', left: '15vw', animationDelay:'180ms'}, fanMessage: `Dear Aster, 
+    {username: '🎀 𝐿𝑒𝓃𝓀𝒶 🎀 (aka Mahou-hime)', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png'              , style: {top: '29vh', left: '16vw', animationDelay:'180ms'}, fanMessage: `Dear Aster, 
 Happy birthday! 
 I want to thank you again for all the fun and happy memories you’ve given me and the Arcadians ♡ 
 I’ve been an Arcadian since the start and I’ve really enjoyed every moment of it (*\´꒳\`*) 
@@ -38,9 +38,9 @@ Sending lots of love your way… ♡(´ε｀ )
 
 Yours truly, 
 🎀Lenka🎀 (aka Mahou-hime lol)`},
-    {username: 'MysteriousLilac (Caeli)', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_mysteries_caeli.png', style: {top: '22vh', left: '22vw', animationDelay:'190ms'}, fanMessage: ""},
+    {username: 'MysteriousLilac (Caeli)', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_mysteries_caeli.png', style: {top: '9vh' , left: '18vw', animationDelay:'190ms'}, fanMessage: ""},
     {username: 'Sirius!! '              , imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_sirius.png'         , style: {top: '18vh', left: '83vw', animationDelay:'200ms'}, fanMessage: ""},
-    {username: '@lookkaew777'           , imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_lookkaew.png'       , style: {top: '28vh', left: '15vw', animationDelay:'200ms'}, fanMessage: ""},
+    {username: '@lookkaew777'           , imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_lookkaew.png'       , style: {top: '17vh', left: '10vw', animationDelay:'200ms'}, fanMessage: ""},
     {username: 'Kenken'                 , imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_kenken.png'         , style: {top: '57vh', left: '35vw', animationDelay:'200ms'}, fanMessage: ""}, 
     {username: 'Nao Fumiko'             , imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png'                      , style: {top: '22vh', left: '52vw', animationDelay:'200ms'}, fanMessage: `Happy birthday, Aster! (It's your third birthday already, omg!)
 Thank you for being here with us and bringing us so much joy and fun memories! We appreciate all the hard work you've done and we'll always be by your side and support you. I hope you achieve all your goals in this journey and I wish you good luck in the future!
@@ -50,7 +50,7 @@ I hope you enjoy your special day today and all the surprises we have for you >w
 From the moment I met you, you were always a source of inspiration and motivation to me.
 Whenever I’m at a low point, I always think about my oshi that pushes through despite everything that tries to bring him down. I’ll keep working hard, so you better not give up either! When you read this remember you are very loved and looked up to. We support you and celebrate you as the cool hardworking inspiring silly little guy you are. Arcadians got your back always <3 (sending birthday huggies!! <3)`},
 
-    {username: 'Rui', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '16vh' , left: '28vw', animationDelay:'200ms'}, fanMessage: `To our dearest star,
+    {username: 'Rui', imgPath: '/assets/fan-letters-page/star-message-popup/bg-3.png', style: {top: '16vh' , left: '24vw', animationDelay:'200ms'}, fanMessage: `To our dearest star,
 
 Happy Birthday! It's been a while ride for both of us, so I hope you enjoy your day to the fullest. Thank you for coming into my and our lives, Aster. You are the best wish that a shooting star could ever grant. `},
     {username: 'is_meep', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_is_meep.png', style: {top: '5vh' , left: '62vw', animationDelay:'200ms'}, fanMessage: ""},
