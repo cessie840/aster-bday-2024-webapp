@@ -5,9 +5,21 @@
 
     <span class="title">{{ data.title }}</span>
 
-    <img [ngClass]="['thumbnail', data.isSmScreen ? 'sm-screen' : '']" [src]="data.thumbnailAssetUrl" />
+    <!-- if no external-link-overlay -->
+    <img *ngIf="!externalLinkOverlayActive" [ngClass]="['thumbnail', data.isSmScreen ? 'sm-screen' : '']" [src]="data.thumbnailAssetUrl" />
+
+    <div *ngIf="externalLinkOverlayActive" class="thumbnail-wrapper">
+        <a [href]="externalLink" target="_blank" style="color: white;">
+            <img [ngClass]="['thumbnail', data.isSmScreen ? 'sm-screen' : '']" [src]="data.thumbnailAssetUrl" />
+    
+            <div class="external-link-overlay">
+                <span>Click to open Link</span>
+                <mat-icon style="padding: 3px 0 0 0; margin-left: 0.5em;">open_in_new</mat-icon>
+            </div>
+        </a>
+    </div>
 
     <p class="description">{{ data.description }}</p>
 
-    <a *ngIf="externalLink" class="external-link" [href]="externalLink">See more</a>
+    <a *ngIf="externalLink && !externalLinkOverlayActive" class="external-link" [href]="externalLink">See more</a>
 </div>

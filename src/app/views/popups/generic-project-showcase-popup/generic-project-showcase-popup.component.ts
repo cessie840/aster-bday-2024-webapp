@@ -10,6 +10,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class GenericProjectShowcasePopupComponent {
   externalLink: SafeResourceUrl | undefined;
 
+  externalLinkOverlayActive = false;
+
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: {
       title: string,
@@ -19,11 +21,15 @@ export class GenericProjectShowcasePopupComponent {
       backgroundColor?: string,
       isSmScreen: boolean,
       useWhiteCloseBtn?: boolean,
+      useExternalLinkOverlay?: boolean,
     },
     private domSanitizer: DomSanitizer,
   ) {
     if (data.externalLink) {
       this.externalLink = this.domSanitizer.bypassSecurityTrustResourceUrl(data.externalLink);
+    }
+    if (data.useExternalLinkOverlay) {
+      this.externalLinkOverlayActive = true;
     }
   }
 }
