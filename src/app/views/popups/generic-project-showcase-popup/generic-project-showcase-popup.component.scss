@@ -20,11 +20,11 @@
     }
 
     .thumbnail.sm-screen {
-        width: 65vh;
+        // width: 65vh;
     }
 
     .thumbnail {
-        width: 80vh;
+        width: 100%;
         height: auto;
         aspect-ratio: 16 / 9;
         margin: 0.5em;
@@ -32,5 +32,6 @@
 
     .description {
         text-align: center;
+        padding: 0 2em;
     }
 }
