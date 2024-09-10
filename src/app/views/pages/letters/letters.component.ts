@@ -41,6 +41,13 @@ export class LettersComponent {
     return this.clickedMessagesNames.has(msg.username);
   }
 
+  getStyle(idx: number, msgStyle: Object): Object {
+    return {
+      ...msgStyle,
+      '--size-factor': `2.${idx}`,
+    };
+  }
+
   showFanMessagePopup(bgImgPath: string, message: string, username: string) {
     if (!this.clickedMessagesNames.has(username)) {
       this.clickedMessagesNames.add(username);
