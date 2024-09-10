@@ -29,12 +29,12 @@
 
         @media (max-width:1500px) { // for small screens
             .message.dynamic-1 {
-                height: 350px;
+                height: 300px;
             }
         }
 
         .message {
-            height: 400px;
+            height: 350px;
             overflow-y: auto;
             white-space: pre-wrap;
             margin-top: 2em;
