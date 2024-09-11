@@ -19,7 +19,9 @@
         </a>
     </div>
 
-    <p class="description">{{ data.description }}</p>
+    <div class="description-wrapper">
+        <p class="description">{{ data.description }}</p>
+    </div>
 
     <a *ngIf="externalLink && !externalLinkOverlayActive" class="external-link" [href]="externalLink">See more</a>
 </div>

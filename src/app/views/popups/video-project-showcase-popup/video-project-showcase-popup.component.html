@@ -4,7 +4,9 @@
     </button>
 
     <span class="title">{{ data.title }}</span>
-    <p class="description">{{ data.description }}</p>
+    <div class="description-wrapper">
+        <p class="description">{{ data.description }}</p>
+    </div>
 
     <iframe class="video" [src]="videoSrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>

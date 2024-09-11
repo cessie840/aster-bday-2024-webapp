@@ -89,7 +89,7 @@ export class ProjectsComponent {
             videoLink: 'https://www.youtube.com/embed/hAqxvClDTfc?si=WnXfPIblnnK7hv7J',
             backgroundColor: 'rgb(147, 113, 221)',
           },
-          minWidth: '900px',
+          minWidth: this.screenWidth <= 1200 / .75 ? '700px' : '1200px',
           autoFocus:false,
         });
         break;
@@ -102,34 +102,34 @@ export class ProjectsComponent {
             videoLink: 'https://www.youtube.com/embed/hAqxvClDTfc?si=WnXfPIblnnK7hv7J',
             backgroundColor: 'rgb(147, 113, 221)',
           },
-          minWidth: '900px',
+          minWidth: this.screenWidth <= 1200 / .75 ? '700px' : '1200px',
           autoFocus:false,
         });
         break;
 
       case 'Akira':
-      this.dialog.open(VideoProjectShowcasePopupComponent, {
-        data: {
-          title: 'Project Title (Video Type)',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          videoLink: 'https://www.youtube.com/embed/hAqxvClDTfc?si=WnXfPIblnnK7hv7J',
-          backgroundColor: 'rgb(105, 93, 207)',
-        },
-        minWidth: '900px',
-        autoFocus:false,
-      });
-      break;
-    
-      case 'Milan':
         this.dialog.open(VideoProjectShowcasePopupComponent, {
           data: {
             title: 'Project Title (Video Type)',
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             videoLink: 'https://www.youtube.com/embed/hAqxvClDTfc?si=WnXfPIblnnK7hv7J',
+            backgroundColor: 'rgb(105, 93, 207)',
+          },
+          minWidth: this.screenWidth <= 1200 / .75 ? '700px' : '1200px',
+          autoFocus:false,
+        });
+        break;
+    
+      case 'Milan':
+        this.dialog.open(VideoProjectShowcasePopupComponent, {
+          data: {
+            title: 'Project Title (Video Type)',
+            description: "Lorem Ipsum is simply dummy text of the printing and t a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            videoLink: 'https://www.youtube.com/embed/hAqxvClDTfc?si=WnXfPIblnnK7hv7J',
             backgroundColor: 'rgb(92, 61, 111)',
             useWhiteCloseBtn: true,
           },
-          minWidth: '900px',
+          minWidth: this.screenWidth <= 1200 / .75 ? '700px' : '1200px',
           autoFocus:false,
         });
         break;
@@ -144,7 +144,7 @@ export class ProjectsComponent {
             backgroundColor: 'rgb(105, 93, 207)',
             isSmScreen: this.screenWidth <= 1200 / .75,
           },
-          minWidth: this.screenWidth <= 1200 / .75 ? '900px' : '1200px',
+          minWidth: this.screenWidth <= 1200 / .75 ? '700px' : '1200px',
           autoFocus:false,
         });
         break;
@@ -160,7 +160,7 @@ export class ProjectsComponent {
             useExternalLinkOverlay: true,
             externalLink: 'https://www.youtube.com/watch?v=hAqxvClDTfc&ab_channel=AsterArcadia%E3%80%90NIJISANJIEN%E3%80%91',
           },
-          minWidth: this.screenWidth <= 1200 / .75 ? '900px' : '1200px',
+          minWidth: this.screenWidth <= 1200 / .75 ? '700px' : '1200px',
           autoFocus:false,
         });
         break;
@@ -177,7 +177,7 @@ export class ProjectsComponent {
             useExternalLinkOverlay: true,
             externalLink: 'https://www.youtube.com/watch?v=hAqxvClDTfc&ab_channel=AsterArcadia%E3%80%90NIJISANJIEN%E3%80%91',
           },
-          minWidth: this.screenWidth <= 1200 / .75 ? '900px' : '1200px',
+          minWidth: this.screenWidth <= 1200 / .75 ? '700px' : '1200px',
           autoFocus:false,
         });
         break;
@@ -187,7 +187,7 @@ export class ProjectsComponent {
           data: {
             title: 'Project Title (Non-Video Type)',
             thumbnailAssetUrl: '/assets/landing-page/background.jpg',
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            description: " and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             externalLink: 'https://www.youtube.com/watch?v=hAqxvClDTfc&ab_channel=AsterArcadia%E3%80%90NIJISANJIEN%E3%80%91',
             backgroundColor: 'rgb(147, 113, 221)',
             isSmScreen: this.screenWidth <= 1200 / .75,

@@ -13,8 +13,17 @@
         margin: 0.5em;
     }
 
-    .description {
-        text-align: center;
+    .description-wrapper {
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+                line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+        .description {
+            text-align: center;
+        }
     }
 
     .close-btn {
