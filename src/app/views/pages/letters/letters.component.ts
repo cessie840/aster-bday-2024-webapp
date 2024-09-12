@@ -44,7 +44,7 @@ export class LettersComponent {
   getStyle(idx: number, msgStyle: Object): Object {
     return {
       ...msgStyle,
-      '--size-factor': `2.${idx}`,
+      '--size-factor': `${1.7 + idx / 100 * 4}`,
     };
   }
 
