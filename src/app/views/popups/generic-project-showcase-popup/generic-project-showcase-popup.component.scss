@@ -72,4 +72,8 @@
             padding: 0 2em;
         }
     }
+
+    ::-webkit-scrollbar-thumb {
+        background: black;
+    }
 }
