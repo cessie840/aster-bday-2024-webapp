@@ -32,7 +32,7 @@
     }
 
     .thumbnail-wrapper {
-        margin: 0.5em;
+        // margin: 0.5em;
         
         .external-link-overlay {
             transition: .5s ease;
@@ -62,15 +62,21 @@
     .description-wrapper {
         overflow-y: auto;
         overflow-x: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-                line-clamp: 3;
-        -webkit-box-orient: vertical;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 3;
+        //         line-clamp: 3;
+        // -webkit-box-orient: vertical;
+        max-height: 72px; // 3 lines
+        margin-top: 1em;
 
         .description {
             text-align: center;
             padding: 0 2em;
         }
+    }
+
+    .external-link {
+        margin-top: 0.5em;
     }
 
     ::-webkit-scrollbar-thumb {
