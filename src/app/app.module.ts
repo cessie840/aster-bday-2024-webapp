@@ -23,6 +23,7 @@ import { CookieModule } from 'ngx-cookie';
 import { ComicProjectShowcasePopupComponent } from './views/popups/comic-project-showcase-popup/comic-project-showcase-popup.component';
 import { VideoProjectShowcasePopupComponent } from './views/popups/video-project-showcase-popup/video-project-showcase-popup.component';
 import { GenericProjectShowcasePopupComponent } from './views/popups/generic-project-showcase-popup/generic-project-showcase-popup.component';
+import { FanartPopupComponent } from './views/popups/fanart-popup/fanart-popup.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { GenericProjectShowcasePopupComponent } from './views/popups/generic-pro
     ComicProjectShowcasePopupComponent,
     VideoProjectShowcasePopupComponent,
     GenericProjectShowcasePopupComponent,
+    FanartPopupComponent,
   ],
   imports: [
     BrowserModule,
