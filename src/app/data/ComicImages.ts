@@ -5,7 +5,7 @@ export interface ComicPageData {
 };
 
 export const JESS_COMIC_PROJECT_IMAGES: readonly ComicPageData[] = [
-    { srcPath: '/assets/jess-comic-project/example1.png' }, // cover
+    { srcPath: '/assets/jess-comic-project/cover.jpg' }, // cover
     { srcPath: '/assets/jess-comic-project/example2.png', chapter: 1, page: 1 },
     { srcPath: '/assets/jess-comic-project/example3.png', chapter: 1, page: 2 },
     { srcPath: '/assets/jess-comic-project/example4.png', chapter: 1, page: 3 },

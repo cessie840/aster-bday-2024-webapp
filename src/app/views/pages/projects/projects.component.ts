@@ -68,9 +68,8 @@ export class ProjectsComponent {
       case 'Jess':
         this.dialog.open(ComicProjectShowcasePopupComponent, {
           data: {
-            title: 'Jess Project title',
-            // description: '(Description and Project tweet link)',
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: 'STARS BEYOND THE DOORS',
+            description: "Aster Arcadia Comics Relay Project",
             imgs: JESS_COMIC_PROJECT_IMAGES,
             isSmallScreen: this.screenHeight <= 700 / .85 || this.screenWidth <= 1200 / .75,
             backgroundColor: 'rgb(104, 92, 204)',
@@ -97,8 +96,8 @@ export class ProjectsComponent {
       case 'Syndrie':
         this.dialog.open(VideoProjectShowcasePopupComponent, {
           data: {
-            title: 'Project Title (Video Type)',
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: 'Celestial Showcase: Aster Arcadia',
+            description: "A look into Aster Arcadia's streams and the reasons why his fans continue to keep coming back for more.",
             videoLink: 'https://www.youtube.com/embed/hAqxvClDTfc?si=WnXfPIblnnK7hv7J',
             backgroundColor: 'rgb(147, 113, 221)',
           },
@@ -152,13 +151,13 @@ export class ProjectsComponent {
       case 'Rui':
         this.dialog.open(GenericProjectShowcasePopupComponent, {
           data: {
-            title: 'Project Title (Non-Video Type)',
-            thumbnailAssetUrl: '/assets/landing-page/background.jpg',
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: 'Project Stellar',
+            thumbnailAssetUrl: '/assets/projects-page/Rui_project_thumbnail.png',
+            description: "It's been a long journey, and we don't regret it because we were able to be with you in this timeline. The stars truly have aligned and have fated us to meet you.",
             backgroundColor: 'rgb(105, 93, 207)',
             isSmScreen: this.screenWidth <= 1200 / .75,
             useExternalLinkOverlay: true,
-            externalLink: 'https://www.youtube.com/watch?v=hAqxvClDTfc&ab_channel=AsterArcadia%E3%80%90NIJISANJIEN%E3%80%91',
+            externalLink: 'https://projectstellar.carrd.co',
           },
           minWidth: this.screenWidth <= 1200 / .75 ? '700px' : '1200px',
           autoFocus:false,
@@ -168,9 +167,9 @@ export class ProjectsComponent {
       case 'Ascana':
         this.dialog.open(GenericProjectShowcasePopupComponent, {
           data: {
-            title: 'Project Title (Non-Video Type)',
-            thumbnailAssetUrl: '/assets/landing-page/background.jpg',
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: 'Animal - DECO*27 (ft. Aster)',
+            thumbnailAssetUrl: '/assets/projects-page/Ascana_project_thumbnail.png',
+            description: "Animal Nyaster Ver.!",
             backgroundColor: 'rgb(92, 61, 111)',
             isSmScreen: this.screenWidth <= 1200 / .75,
             useWhiteCloseBtn: true,
@@ -185,10 +184,10 @@ export class ProjectsComponent {
       case 'Lyn':
         this.dialog.open(GenericProjectShowcasePopupComponent, {
           data: {
-            title: 'Project Title (Non-Video Type)',
-            thumbnailAssetUrl: '/assets/landing-page/background.jpg',
-            description: " and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            externalLink: 'https://www.youtube.com/watch?v=hAqxvClDTfc&ab_channel=AsterArcadia%E3%80%90NIJISANJIEN%E3%80%91',
+            title: 'Custom Aster Arcadia Mouse Animated Mouse Cursors',
+            thumbnailAssetUrl: '/assets/projects-page/Lyn_project_thumbnail.gif',
+            description: "In celebration of Aster's Birthday, here are some Aster Animated Cursors for everyone to use and enjoy! These animated mouse cursors will surely brighten up your screen just like our Star Boy!",
+            externalLink: 'https://drive.google.com/drive/folders/116S9llCqzXrDkQvz7bOJTCBxsExAeydb?usp=sharing',
             backgroundColor: 'rgb(147, 113, 221)',
             isSmScreen: this.screenWidth <= 1200 / .75,
             useWhiteCloseBtn: true,
