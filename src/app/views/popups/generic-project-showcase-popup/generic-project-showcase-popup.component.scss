@@ -11,6 +11,7 @@
     .title {
         font-size: x-large;
         margin: 0.5em;
+        text-align: center;
     }
 
     .close-btn {
@@ -32,7 +33,7 @@
     }
 
     .thumbnail-wrapper {
-        // margin: 0.5em;
+        margin: 1em 0;
         
         .external-link-overlay {
             transition: .5s ease;
