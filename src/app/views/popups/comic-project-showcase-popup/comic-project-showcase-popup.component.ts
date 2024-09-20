@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ComicPageData } from 'src/app/data/ComicImages';
+import { ComicImagesPreloaderService } from 'src/app/services/comic-images-preloader.service';
 
 const MAX_IMAGES_SHOWN = 1;
 
@@ -18,7 +19,7 @@ export class ComicProjectShowcasePopupComponent {
 
   idx = 0;
 
-  imagesToShow: ComicPageData[] = [];
+  indicesToShow: number[] = [];
 
   isSmallScreen = false;
 
@@ -31,27 +32,30 @@ export class ComicProjectShowcasePopupComponent {
       backgroundColor?: string,
       useWhiteCloseBtn?: boolean,
     },
+    private comicImagesPreloader: ComicImagesPreloaderService,
   ) {
     if (data.imgs.length > MAX_IMAGES_SHOWN) {
       this.disableRightBtn = false;
     }
-    this.computeImagesToShow();
+    this.computeIndicesToShow();
 
     if (data.isSmallScreen) {
       this.isSmallScreen = true;
     }
+
+    this.comicImagesPreloader.preloadComic();
   }
 
-  private computeImagesToShow() {
-    const newImagesToShow: ComicPageData[] = [];
+  private computeIndicesToShow() {
+    const newIndicesToShow: number[] = [];
     for (let i = this.idx; i < this.idx + MAX_IMAGES_SHOWN; i++) {
       if (i < this.data.imgs.length) {
-        newImagesToShow.push(this.data.imgs[i]);
+        newIndicesToShow.push(i);
       } else {
-        newImagesToShow.push({ srcPath: this.PLACEHOLDER_IMG_VALUE });
+        newIndicesToShow.push(-1); // ### not used, would need to further fix if changing max images shown to something other than 1
       }
     }
-    this.imagesToShow = newImagesToShow;
+    this.indicesToShow = newIndicesToShow;
   }
 
   getDisplayOf(pageData: ComicPageData): string {
@@ -70,7 +74,7 @@ export class ComicProjectShowcasePopupComponent {
     }
     this.disableRightBtn = false;
 
-    this.computeImagesToShow();
+    this.computeIndicesToShow();
   }
 
   navigateRight() {
@@ -81,6 +85,6 @@ export class ComicProjectShowcasePopupComponent {
     }
     this.disableLeftBtn = false;
 
-    this.computeImagesToShow();
+    this.computeIndicesToShow();
   }
 }

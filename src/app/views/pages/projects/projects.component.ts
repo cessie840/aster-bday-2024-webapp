@@ -8,6 +8,7 @@ import { JESS_COMIC_PROJECT_IMAGES } from 'src/app/data/ComicImages';
 import { VideoProjectShowcasePopupComponent } from '../../popups/video-project-showcase-popup/video-project-showcase-popup.component';
 import { MatButtonModule } from '@angular/material/button';
 import { GenericProjectShowcasePopupComponent } from '../../popups/generic-project-showcase-popup/generic-project-showcase-popup.component';
+import { ComicImagesPreloaderService } from 'src/app/services/comic-images-preloader.service';
 
 const COOKIE_PROJECTS_PAGE_UNLOCKED = 'ab-ppu';
 
@@ -30,12 +31,15 @@ export class ProjectsComponent {
   constructor(
     private cookieService: CookieService,
     private dialog: MatDialog,
+    private comicImagesPreloader: ComicImagesPreloaderService,
   ) {
     if (this.cookieService.get(COOKIE_PROJECTS_PAGE_UNLOCKED) === '1') {
       this.isPageLocked = false;
     }
 
     this.onResize();
+
+    this.comicImagesPreloader.preloadComic();
   }
 
   @HostListener('window:resize', ['$event'])
