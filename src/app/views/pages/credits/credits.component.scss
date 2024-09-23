@@ -76,7 +76,9 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  padding-block: 10vh;
+  flex-grow: 1
 }
 
 .projectstellar {
@@ -184,6 +186,7 @@ button {
   justify-content: center;
   width:75vw;
   padding-block: 10px;
+  flex-wrap: wrap;
 }
 
 
