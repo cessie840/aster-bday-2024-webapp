@@ -12,7 +12,7 @@ export const STAR_MESSAGES: readonly StarMessageProps[] = [
 
 - Akira.`},
     {username: 'kharii'        , imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_sirikarn.png', style: {top: '37vh', left: '6vw' , animationDelay:'50ms'}, fanMessage: ""},
-    {username: '@yoruutt'      , imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_yoruutt.png' , style: {top: '64vh', left: '18vw', animationDelay:'60ms'}, fanMessage: ""},
+    {username: '@yoruutt'      , imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_yoruutt.png' , style: {top: '44vh', left: '18vw', animationDelay:'60ms'}, fanMessage: ""},
     {username: '格格藍@G_g_blu', imgPath: '/assets/fan-letters-page/star-message-popup/custom_msg_g_g_blu.png'  , style: {top: '19vh', left: '76vw', animationDelay:'7000ms'}, fanMessage: ""},
     {username: 'Ahoge'         , imgPath: '/assets/fan-letters-page/star-message-popup/bg-1.png'                , style: {top: '15vh', left: '43vw', animationDelay:'800ms'}, fanMessage: `Aster*sniffle* happy birthday I love you, you old star ur so sigma keep being you, you're my favorite Oshi keep doing what you do to make others happy😊 I love you ❤️ skibidi rizz
 Also can I follow you where you’re going right now, because my parents always told me to follow my 𝔻𝕣𝕖𝕒𝕞𝕤 😔`},
