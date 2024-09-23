@@ -73,7 +73,7 @@ export class ProjectsComponent {
         this.dialog.open(ComicProjectShowcasePopupComponent, {
           data: {
             title: 'STARS BEYOND THE DOORS',
-            description: "Aster Arcadia Comics Relay Project",
+            description: "Aster Arcadia Comic Relay Project",
             imgs: JESS_COMIC_PROJECT_IMAGES,
             isSmallScreen: this.screenHeight <= 700 / .85 || this.screenWidth <= 1200 / .75,
             backgroundColor: 'rgb(104, 92, 204)',
