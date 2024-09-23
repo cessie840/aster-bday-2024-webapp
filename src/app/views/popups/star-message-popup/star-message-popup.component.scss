@@ -1,5 +1,8 @@
 .container {
     background-size: cover;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
 
     text-align: -webkit-center;
 
@@ -21,17 +24,23 @@
         .username {
             position: sticky;
             top: 0;
+            font-size: xx-large;
         }
 
         @media (max-width:1500px) { // for small screens
             .message.dynamic-1 {
-                height: 350px;
+                height: 300px;
             }
         }
 
         .message {
-            height: 400px;
+            height: 350px;
             overflow-y: auto;
+            white-space: pre-wrap;
+            margin-top: 2em;
+            width: 85%;
+            font-size: x-large;
+            line-height: normal;
         }
     }
 }

@@ -75,18 +75,28 @@
                 aspect-ratio: 1 / 2;
                 display: flex;
                 flex-direction: column;
-                padding: 50px 40px;
+                padding: 25px 30px;
 
                 background-size: cover;
+                -moz-background-size: 100% 100%;
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
 
                 cursor: pointer;
 
                 .spacer {
-                    flex-grow: 1;
+                    height: 80%;
                 }
 
-                .title {
-                    font-size: xx-large;
+                .title-wrapper {
+                    height: 20%;
+                    align-content: center;
+                    align-self: center;
+
+                    .title {
+                        line-height: 1.1;
+                        font-size: xx-large;
+                    }
                 }
             }
 

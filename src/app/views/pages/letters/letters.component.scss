@@ -24,13 +24,15 @@
   $star-width: 35px;
   
   .star {
+    --size-factor: 2;
     width: $star-width;
     z-index: 1;
     position: absolute;
+    transform: scale(var(--size-factor));
   }
   
   .star:hover {
-    transform: scale(1.1);
+    transform: scale(3.2);
     cursor: pointer;
   }
   

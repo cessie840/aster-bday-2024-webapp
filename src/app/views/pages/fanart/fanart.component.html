@@ -1,1 +1,9 @@
-<p>fanart works!</p>
+<div class="content">
+    <div class="title">FANART GALLERY</div>
+
+    <div class="collage">
+        <div class="fanart-wrapper" *ngFor="let fanartDetails of artworks" [ngStyle]="getGridRowStyle(fanartDetails)">
+            <img [src]="getSmallSrcPath(fanartDetails.srcPath)" class="fanart" (click)="openArtworkPopup(fanartDetails)" />
+        </div>
+    </div>
+</div>

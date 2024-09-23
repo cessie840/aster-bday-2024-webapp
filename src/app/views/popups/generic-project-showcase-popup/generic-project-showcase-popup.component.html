@@ -1,0 +1,27 @@
+<div class="container" [ngStyle]="{'background-color': data.backgroundColor ? data.backgroundColor : 'rgb(92, 61, 111)'}">
+    <button mat-icon-button class="close-btn" matTooltip="Close" matDialogClose>
+        <img class="close-btn-icon" [src]="data.useWhiteCloseBtn ? '/assets/shared/close_btn_white.png' : '/assets/shared/close_btn_black.png'" />
+    </button>
+
+    <span class="title">{{ data.title }}</span>
+
+    <!-- if no external-link-overlay -->
+    <img *ngIf="!externalLinkOverlayActive" [ngClass]="['thumbnail', data.isSmScreen ? 'sm-screen' : '']" [src]="data.thumbnailAssetUrl" />
+
+    <div *ngIf="externalLinkOverlayActive" class="thumbnail-wrapper">
+        <a [href]="externalLink" target="_blank" style="color: white;">
+            <img [ngClass]="['thumbnail', data.isSmScreen ? 'sm-screen' : '']" [src]="data.thumbnailAssetUrl" />
+    
+            <div class="external-link-overlay">
+                <span>Click to open Link</span>
+                <mat-icon style="padding: 3px 0 0 0; margin-left: 0.5em;">open_in_new</mat-icon>
+            </div>
+        </a>
+    </div>
+
+    <div class="description-wrapper">
+        <p class="description">{{ data.description }}</p>
+    </div>
+
+    <a *ngIf="externalLink && !externalLinkOverlayActive" class="external-link" [href]="externalLink">See more</a>
+</div>
