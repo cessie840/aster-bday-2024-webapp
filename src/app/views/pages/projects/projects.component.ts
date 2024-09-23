@@ -83,20 +83,6 @@ export class ProjectsComponent {
         });
         break;
 
-      case 'Niko':
-        this.dialog.open(VideoProjectShowcasePopupComponent, {
-          data: {
-            title: 'Project Title (Video Type)',
-            // description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            videoLink: 'https://www.youtube.com/embed/hAqxvClDTfc?si=WnXfPIblnnK7hv7J',
-            backgroundColor: 'rgb(147, 113, 221)',
-          },
-          minWidth: this.screenWidth <= 1200 / .75 ? '700px' : '1200px',
-          autoFocus:false,
-        });
-        break;
-
       case 'Syndrie':
         this.dialog.open(VideoProjectShowcasePopupComponent, {
           data: {
