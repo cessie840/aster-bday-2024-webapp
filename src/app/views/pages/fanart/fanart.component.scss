@@ -1,8 +1,63 @@
+//randomly allocate stars
+@function random-stars ($screen-width, $color, $density){
+    $x-shadow: random($screen-width);
+    $y-shadow: random($screen-width);
+  
+    $stars: '#{$x-shadow}px #{$y-shadow}px #{$color}';
+  
+    @for $i from 2 through $density{
+        $x-shadow: random($screen-width);
+        $y-shadow: random($screen-width);
+  
+        $stars: '#{$stars}, #{$x-shadow}px #{$y-shadow}px #{$color}';
+    }
+    @return unquote($stars);
+  }
+  
+  //stars animation
+  @mixin stars-animation ($screen-width, $color, $density, $speed, $delay, $size){
+    width: $size+px;
+    height: $size+px;
+    border-radius: 0%;
+    box-shadow: #fff 50%;
+    opacity: 50%;
+    box-shadow:  random-stars($screen-width, $color, $density);
+    animation-name: stars-twinkling;
+    animation-duration: $speed+s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-delay: $delay+s;
+  }
+  
+  //applying animation & design for the stars
+#stars1{
+    @include stars-animation(5000, #ffffff, 2000, 2, 0.1, 1);
+  }
+  
+  #stars2{
+    @include stars-animation(5000, #fff, 500, 4, 0.5, 5);
+  }
+  
+  #stars3{
+    @include stars-animation(8000, #fff, 1500, 3, 0.1, 2);
+  }
+  
+  #stars4{
+    @include stars-animation(8000, #fff, 1200, 5, 0.5, 3);
+  }
+  
+  @keyframes stars-twinkling {
+    0%   {opacity: 0;}
+    50%  {opacity: 1;}
+    100% {opacity: 0;}
+  }
+
 .content {
     height: 100%;
     width: 100%;
 
-    background-image: url('/assets/fanart-page/bg.jpeg');
+    background-image: linear-gradient(to bottom, #000000,#6a5bcd,#9470db);
     background-size: cover;
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;

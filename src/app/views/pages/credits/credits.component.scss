@@ -47,19 +47,19 @@
 
 //applying animation & design for the stars
 #stars1{
-  @include stars-animation(5000, #ffffff, 600, 2, 0.1, 1);
+  @include stars-animation(5000, #ffffff, 2000, 2, 0.1, 1);
 }
 
 #stars2{
-  @include stars-animation(5000, #fff, 300, 4, 0.5, 5);
+  @include stars-animation(5000, #fff, 500, 4, 0.5, 5);
 }
 
 #stars3{
-  @include stars-animation(8000, #fff, 1000, 3, 0.1, 2);
+  @include stars-animation(8000, #fff, 1500, 3, 0.1, 2);
 }
 
 #stars4{
-  @include stars-animation(8000, #fff, 1000, 5, 0.5, 3);
+  @include stars-animation(8000, #fff, 1200, 5, 0.5, 3);
 }
 
 @keyframes stars-twinkling {
