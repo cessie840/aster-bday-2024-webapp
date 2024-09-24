@@ -1,4 +1,5 @@
 .bg-video {
+  object-fit: cover;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -16,26 +17,26 @@
 
 .stars-section {
   position: absolute;
-  top: 50px;
   left: 0;
-  width: 40vw;
+  width: 60vw;
   height: 80vh;
 
   $star-width: 35px;
-  
+
   .star {
     --size-factor: 2;
     width: $star-width;
     z-index: 1;
     position: absolute;
     transform: scale(var(--size-factor));
+    transition: 100ms ease;
   }
-  
+
   .star:hover {
     transform: scale(3.2);
     cursor: pointer;
   }
-  
+
   .glow {
     width: $star-width;
     z-index: 0;

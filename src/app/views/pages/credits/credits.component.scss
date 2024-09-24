@@ -68,43 +68,79 @@
   100% {opacity: 0;}
 }
 
+
 //Credits Content
 
 section {
-  height:95vh;
   width:80vw;
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
+  padding-block: 10vh;
+  flex-grow: 1
 }
+
+.projectstellar {
+  scale:0.9;
+  width:90vw;
+  height:170vh;
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 
 .hero-carousel {
   padding-block: 1rem;
 }
 
 .carousel {
-  width:60vw;
   background-color:black;
   position:relative;
   box-shadow:
     0 0 15px 1px #f899ff29,
     0 0 28px 10px #c870ff40;
-  img {
-    height:100%;
-    object-fit: cover;
-  }
 }
 
-.carousel-item {
-  overflow:hidden;
-  height:70vh;
+.carousel-inner {
+  width:60vw;
+  height: 70vh;
+  display:flex;
 }
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .carousel-control-prev, .carousel-control-next {
   width:7%;
 }
 
+
+/* Responsive adjustment for smaller screens */
+
+@media (max-width: 1068px) {
+  .carousel-inner {
+    height: 54vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-inner {
+    height: 40vh;
+  }
+}
+
 .member-container {
-  width: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,6 +160,7 @@ h2 {
   display: flex;
   align-self: center;
   justify-content: center;
+  text-align: center;
   line-height: 70px;
   font-size: 2rem;
   margin: 0 !important;
@@ -137,6 +174,7 @@ button {
   height: 7px;
   border-radius: 50%;
   margin-inline:1rem;
+  flex-shrink: 0;
 }
 }
 
@@ -147,7 +185,10 @@ button {
   text-align: center;
   justify-content: center;
   width:75vw;
+  padding-block: 10px;
+  flex-wrap: wrap;
 }
+
 
 h4 {
   font-size:0.8rem !important;
@@ -163,7 +204,7 @@ h3 {
 }
 
 
-
+/*
 @supports ( animation-timeline: view() )
 {
   @keyframes wipe {
@@ -185,9 +226,10 @@ h3 {
 
 
   .zoocadia {
+    view-timeline: --trigger block;
     animation: trigger linear forwards;
-    animation-timeline: view();
-    animation-range: entry 10% contain 10%;
+    animation-timeline: --trigger;
+    animation-range: entry 1% contain 4%;
   }
 
 
@@ -205,3 +247,4 @@ h3 {
     }
   }
 }
+*/
