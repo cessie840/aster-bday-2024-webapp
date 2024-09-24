@@ -1,6 +1,15 @@
 @use '@angular/material' as mat;
 @use '/src/styles.scss';
 
+// Background
+.bg {
+  background-image: linear-gradient(to bottom, #000000,#6a5bcd,#9470db);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 //randomly allocate stars
 @function random-stars ($screen-width, $color, $density){
     $x-shadow: random($screen-width);
@@ -57,21 +66,14 @@
   }
 
 .container {
-    height: 100%;
-    width: 100%;
-
-    background-image: linear-gradient(to bottom, #000000,#6a5bcd,#9470db);
-    background-size: cover;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-
-    padding: 50px 10%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    button{
+      float: inline-end;
+    }
 
     .prompt-bg {
         z-index: -1;
