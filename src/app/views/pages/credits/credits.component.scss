@@ -1,7 +1,7 @@
 *
 {
  /*border: 3px solid red;*/
-  font-family: 'Marcellus SC' !important;
+  font-family: 'Krungthep' !important;
 }
 
 //Credits Background
@@ -68,47 +68,39 @@
   100% {opacity: 0;}
 }
 
+
 //Credits Content
 
 section {
-  height:95vh;
   width:80vw;
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 10vh;
+  flex-grow: 1
 }
 
-.hero-carousel {
-  padding-block: 1rem;
-}
-
-.carousel {
-  width:60vw;
-  background-color:black;
-  position:relative;
-  box-shadow:
-    0 0 15px 1px #f899ff29,
-    0 0 28px 10px #c870ff40;
-  img {
-    height:100%;
-    object-fit: cover;
+.projectstellar {
+  scale:0.9;
+  width:90vw;
+  h2 {
+    font-size: 2rem;
   }
 }
 
-.carousel-item {
-  overflow:hidden;
-  height:70vh;
-}
-.carousel-control-prev, .carousel-control-next {
-  width:7%;
+.astapape .members {
+  justify-content: space-around;
 }
 
+
+
 .member-container {
-  width: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-block:3vh;
 }
 
 .member-container img {
@@ -124,6 +116,7 @@ h2 {
   display: flex;
   align-self: center;
   justify-content: center;
+  text-align: center;
   line-height: 70px;
   font-size: 2rem;
   margin: 0 !important;
@@ -137,6 +130,7 @@ button {
   height: 7px;
   border-radius: 50%;
   margin-inline:1rem;
+  flex-shrink: 0;
 }
 }
 
@@ -147,7 +141,10 @@ button {
   text-align: center;
   justify-content: center;
   width:75vw;
+  padding-block: 10px;
+  flex-wrap: wrap;
 }
+
 
 h4 {
   font-size:0.8rem !important;
@@ -163,7 +160,7 @@ h3 {
 }
 
 
-
+/*
 @supports ( animation-timeline: view() )
 {
   @keyframes wipe {
@@ -185,9 +182,10 @@ h3 {
 
 
   .zoocadia {
+    view-timeline: --trigger block;
     animation: trigger linear forwards;
-    animation-timeline: view();
-    animation-range: entry 10% contain 10%;
+    animation-timeline: --trigger;
+    animation-range: entry 1% contain 4%;
   }
 
 
@@ -205,3 +203,4 @@ h3 {
     }
   }
 }
+*/

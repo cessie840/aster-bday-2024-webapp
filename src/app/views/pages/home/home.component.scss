@@ -1,5 +1,32 @@
 @use '/src/styles.scss';
 
+.timer {
+  position: absolute;
+  height:100vh; width:100%; display:
+  flex; overflow: hidden !important;
+  justify-content: center;
+  margin-bottom: 5vh;
+  align-items:end;
+}
+
+.timer iframe {
+  scale:1.5; margin-bottom: 7vh
+}
+
+@media screen and (max-width: 768px) {
+  .timer iframe {
+    scale: 0.9;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .timer {
+overflow: auto;
+ }
+  .timer iframe {
+    scale: 0.7;
+  }
+}
 
 .bg-image {
     position: absolute;
@@ -8,6 +35,7 @@
     background-image: url('/assets/landing-page/background.jpg');
     background-size: cover;
     z-index: 0;
+    background-position: top center;
 }
 
 .bg-image::after {
