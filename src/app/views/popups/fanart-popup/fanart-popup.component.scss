@@ -2,7 +2,6 @@
     width: 100%;
     background-color: rgb(122, 97, 225);
 
-    
     .title {
         padding: 0.5em;
         display: flex;
@@ -15,13 +14,17 @@
         }
 
         .close-btn {
-            // position: absolute;
-            // top: 15px;
-            // right: 15px;
+            position: absolute;
+            top: 2px;
+            right: 13px;
         }
     }
 
     .fanart {
         width: 100%;
     }
+}
+
+::ng-deep .mat-mdc-dialog-container {
+    box-shadow: 0 0 50px  rgb(185, 168, 255);
 }

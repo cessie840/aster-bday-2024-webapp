@@ -56,7 +56,7 @@ export class FanartComponent {
       },
       autoFocus: false,
       width: this.screenWidth <= 1200 / .75 ? '30vw' : undefined,
-      minWidth: this.screenWidth <= 1200 / .75 ? undefined: '40vw',
+      minWidth: this.screenWidth <= 1200 / .75 ? undefined: '35vw',
     });
   }
 }
